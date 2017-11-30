@@ -5,6 +5,7 @@
 <!--[if IE 9 ]>    <html class="ie9 <%= @bodyId %>"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="<%= @bodyId %>"> <!--<![endif]-->
 <head>
+  <% if Rails.env.production? %>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110476619-1"></script>
   <script>
@@ -14,7 +15,9 @@
 
    gtag('config', 'UA-110476619-1');
   </script>
-
+  <% else %>
+  <!-- Google Analytics goes here, but only for production mode, you are currently in <%= Rails.env %> mode. -->
+  <% end %>
 
   <title>jho.</title>
   <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
