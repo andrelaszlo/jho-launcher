@@ -1,23 +1,21 @@
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  database: <%= ENV.fetch("POSTGRESQL_ADDON_DB") %>
-  host: <%= ENV.fetch("POSTGRESQL_ADDON_HOST") %>
-  username: <%= ENV.fetch("POSTGRESQL_ADDON_USER") %>
-  password: <%= ENV.fetch("POSTGRESQL_ADDON_PASSWORD") %>
-  port: <%= ENV.fetch("POSTGRESQL_ADDON_PORT") %>
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
-
 development:
   adapter: postgresql
   database: prelaunchr_development
   host: localhost
   port: 5432
+
 test:
   adapter: postgresql
   database: prelaunchr_test
   host: localhost
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV["POSTGRESQL_ADDON_DB"] %>
+  host: <%= ENV["POSTGRESQL_ADDON_HOST"] %>
+  username: <%= ENV["POSTGRESQL_ADDON_USER"] %>
+  password: <%= ENV["POSTGRESQL_ADDON_PASSWORD"] %>
+  port: <%= ENV["POSTGRESQL_ADDON_PORT"] %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
