@@ -53,5 +53,8 @@ module Prelaunchr
 
     # decides whether the prelaunch campaign has ended or not
     config.ended = ENV['CAMPAIGN_ENDED'].to_s == 'true'
+
+    # decides whether the prelaunch campaign has started or not (show placeholder)
+    config.started = ENV['CAMPAIGN_STARTED'].to_s == 'true'
   end
 end

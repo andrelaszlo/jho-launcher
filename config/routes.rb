@@ -4,9 +4,11 @@ Prelaunchr::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  #root :to => "users#new"
-
-  root :to => "users#placeholder"
+  if Rails.application.config.started
+    root :to => "users#new"
+  else
+    root :to => "users#placeholder"
+  end
 
   post 'users/create' => 'users#create'
   get 'refer-a-friend' => 'users#refer'
