@@ -2,6 +2,14 @@ class UsersController < ApplicationController
   before_filter :skip_first_page, only: :new
   before_filter :handle_ip, only: :create
 
+  def placeholder
+    @bodyId = 'placeholder'
+
+    respond_to do |format|
+      format.html # placeholder.html.erb
+    end
+  end
+
   def new
     @bodyId = 'home'
     @is_mobile = mobile_device?

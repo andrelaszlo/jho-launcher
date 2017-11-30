@@ -12,6 +12,23 @@ form{
     clear: both;
 }
 
+/* Placeholder */
+
+html.placeholder{
+  background: #F0F5F7;
+  height: 100%;
+
+  body {
+    height: 100%;
+  }
+
+  .hero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 /* Home */
 
