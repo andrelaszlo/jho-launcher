@@ -32,11 +32,11 @@ html.placeholder{
         margin-left: 8px;  // Center horizontally visually
         margin-top: -10px; // Center vertically visually
         width: 250px;
-        -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-           -moz-animation: fadein 6s; /* Firefox < 16 */
-            -ms-animation: fadein 6s; /* Internet Explorer */
-             -o-animation: fadein 6s; /* Opera < 12.1 */
-                animation: fadein 6s;
+        -webkit-animation: fadein 5s ease-in; /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: fadein 5s ease-in; /* Firefox < 16 */
+            -ms-animation: fadein 5s ease-in; /* Internet Explorer */
+             -o-animation: fadein 5s ease-in; /* Opera < 12.1 */
+                animation: fadein 5s ease-in;
     }
   }
 }
