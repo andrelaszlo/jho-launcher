@@ -42,3 +42,6 @@ group :production do
   gem 'rails_12factor'
   gem 'rails_serve_static_assets'
 end
+
+# Added at 2017-11-30 16:55:56 +0100 by andre:
+gem "puma", "~> 3.11"
