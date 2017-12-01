@@ -144,7 +144,59 @@ html.home{
   }
 }
 
-
 .justify-content-center {
   .p2 { border: 1px solid green; }
+}
+
+html.refer{
+  body {
+    background-color: rgba(226, 113, 112, 0.3);
+    margin-top: 19px;
+    color: #223C49;
+    text-rendering: geometricPrecision;
+  }
+
+  #logo {
+    display: block;
+  }
+
+  h1, h2, h3 {
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+  }
+
+  h1 {
+    line-height: 44px;
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-weight: normal;
+    line-height: 42px;
+    font-size: 24px;
+  }
+
+  p {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+
+    &.font-line {
+      line-height: 30px;
+    }
+  }
+
+  .highlight {
+    background-color: #FFFFFF;
+  }
 }
