@@ -1,17 +1,21 @@
-<div class="row">
-  <div class="col-sm logo-col">
-    <img src="<%= asset_path('refer/jho-logo.svg') %>">
-  </div>
-</div>
+<div class="container">
 
-<div class="row">
-  <div class="col-sm">
-    <div class="<%= "ended" if Rails.application.config.ended %>">
-      <% if Rails.application.config.ended %>
-        <%= render "users/campaign_ended" %>
-      <% else %>
-        <%= render "users/campaign_ongoing" %>
-      <% end %>
+    <div class="row">
+        <div class="col-sm logo-col">
+            <img src="<%= asset_path('refer/jho-logo.svg') %>">
+        </div>
     </div>
-  </div>
+
+    <div class="row">
+        <div class="col-sm">
+            <div class="<%= "ended" if Rails.application.config.ended %>">
+                <% if Rails.application.config.ended %>
+                    <%= render "users/campaign_ended" %>
+                <% else %>
+                    <%= render "users/campaign_ongoing" %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+
 </div>
