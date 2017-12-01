@@ -62,9 +62,48 @@ html.home{
   body {
     background: #F0F5F7;
     margin-top: 19px;
+    color: #223C49;
   }
 
   #logo {
     display: block;
+  }
+
+  h1, h2 {
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 66px;
+  }
+
+  h2 {
+    font-size: 36px;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+
+    &.font-small {
+      font-size: 16px;
+    }
+
+    &.font-big {
+      font-size: 24px;
+    }
+  }
+
+  .description {
+    background: #FFFFFF;
   }
 }
