@@ -1,70 +1,72 @@
-<div class="container">
-
-  <div class="row mb-5">
-    <div class="col">
-      <img src="<%= asset_path('refer/jho-logo.svg') %>" class="mx-auto" id="logo">
-    </div>
-  </div>
-
-  <div class="row mb-5">
-    <div class="col-sm order-sm-2">
-      <h1>
-        Enfin !
-      </h1>
-      <p class="font-big">
-        Une marque de tampons et serviettes hygiéniques 100 % coton bio.
-      </p>
-      <p class="font-small">
-        (que du coton bio. Et absolument rien d’autre)
-      </p>
-
-      <h3>
-        Veux-tu recevoir bientôt les produits jho&nbsp;?
-      </h3>
-    </div>
-
-    <div class="col-sm order-sm-1">
-      <img src="<%= asset_path('refer/tmp-video.png') %>" style="width: 100%">
-    </div>
-  </div>
-
-  <div class="row description mb-5 p-5">
-    <div class="col-sm">
-      <h2>
-        Des produits sains
-      </h2>
-      <p>
-        0 % de chlore, 0 % de phtalate, 0 % de glyphosate. 100 % coton bio. Et tout aussi efficaces.
-      </p>
-    </div>
-    <div class="col-sm">
-      <h2>
-        Livrés chez vous
-      </h2>
-      <p>
-        Commandez sur jho.fr dès février, on livrera à votre porte. Vous pourrez même vous abonner.
-      </p>
-    </div>
-    <div class="col-sm">
-      <h2>
-        Merci pour elles&nbsp;!
-      </h2>
-      <p>
-        À chacune de vos commandes, des produits seront distribués à des femmes dans le besoin.
-      </p>
-    </div>
-  </div>
-
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm">
-      <div class="<%= "ended" if Rails.application.config.ended %>">
-        <% if Rails.application.config.ended %>
-          <%= render "users/campaign_ended" %>
-        <% else %>
-          <%= render "users/campaign_ongoing" %>
-        <% end %>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col">
+          <img src="<%= asset_path('refer/jho-logo.svg') %>" class="mx-auto" id="logo">
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-sm order-sm-2">
+          <h1>
+            Enfin !
+          </h1>
+          <p class="font-big">
+            Une marque de tampons et serviettes hygiéniques 100 % coton bio.
+          </p>
+          <p class="font-small">
+            (que du coton bio. Et absolument rien d’autre)
+          </p>
+
+          <h3>
+            Veux-tu recevoir bientôt les produits jho&nbsp;?
+          </h3>
+
+          <div class="<%= "ended" if Rails.application.config.ended %>">
+            <% if Rails.application.config.ended %>
+              <%= render "users/campaign_ended" %>
+            <% else %>
+              <%= render "users/campaign_ongoing" %>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="col-sm order-sm-1">
+          <img src="<%= asset_path('refer/tmp-video.png') %>" style="width: 100%">
+        </div>
       </div>
     </div>
   </div>
 
+  <div class="row highlight">
+    <div class="container">
+      <div class="row mb-5 p-5">
+        <div class="col-sm">
+          <h2>
+            Des produits sains
+          </h2>
+          <p>
+            0 % de chlore, 0 % de phtalate, 0 % de glyphosate. 100 % coton bio. Et tout aussi efficaces.
+          </p>
+        </div>
+        <div class="col-sm">
+          <h2>
+            Livrés chez vous
+          </h2>
+          <p>
+            Commandez sur jho.fr dès février, on livrera à votre porte. Vous pourrez même vous abonner.
+          </p>
+        </div>
+        <div class="col-sm">
+          <h2>
+            Merci pour elles&nbsp;!
+          </h2>
+          <p>
+            À chacune de vos commandes, des produits seront distribués à des femmes dans le besoin.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
