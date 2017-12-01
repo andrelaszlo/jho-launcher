@@ -59,5 +59,11 @@ html.placeholder{
 /* Home */
 
 html.home{
-	background: #F0F5F7;
+  body {
+    background: #F0F5F7;
+  }
+
+  .logo-col {
+    text-align: center;
+  }
 }
