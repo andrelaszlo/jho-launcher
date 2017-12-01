@@ -8,7 +8,7 @@
       </div>
 
       <div class="row">
-        <div class="col-lg order-lg-2 mb-100px">
+        <div class="col-lg order-lg-2 mb-100px px-lg-5">
           <h1 class="emoji">
             Enfin ! 💃🏽🎉
           </h1>
@@ -25,13 +25,11 @@
             Veux-tu recevoir bientôt les produits jho&nbsp;?
           </h3>
 
-          <div>
-            <% if Rails.application.config.ended %>
-              <%= render "users/campaign_ended" %>
-            <% else %>
-              <%= render "users/campaign_ongoing" %>
-            <% end %>
-          </div>
+          <% if Rails.application.config.ended %>
+            <%= render "users/campaign_ended" %>
+          <% else %>
+            <%= render "users/campaign_ongoing" %>
+          <% end %>
         </div>
 
         <div class="col-lg order-lg-1 mb-100px">
@@ -52,7 +50,7 @@
             0 % de chlore, 0 % de phtalate, 0 % de glyphosate. 100 % coton bio. Et tout aussi efficaces.
           </p>
         </div>
-        <div class="col-md pb-5">
+        <div class="col-md pb-5 py-md-5">
           <h2>
             Livrés chez vous
           </h2>
@@ -60,7 +58,7 @@
             Commandez sur jho.fr dès février, on livrera à votre porte. Vous pourrez même vous abonner.
           </p>
         </div>
-        <div class="col-md pb-5">
+        <div class="col-md pb-5 py-md-5">
           <h2>
             Merci pour elles&nbsp;!
           </h2>
@@ -75,7 +73,7 @@
   <div class="row highlight-dark">
     <div class="container">
       <div class="row py-100px">
-        <div class="col-sm">
+        <div class="col-sm text-center">
 
           <h2 class="emoji">
             Prête pour des règles plus saines, plus justes&nbsp;?<br>
@@ -85,11 +83,14 @@
             Rejoins jho et parles-en autour de toi.
           </p>
 
+
           <% if Rails.application.config.ended %>
             <%= render "users/campaign_ended" %>
           <% else %>
             <%= render "users/campaign_ongoing" %>
           <% end %>
+
+
         </div>
       </div>
     </div>

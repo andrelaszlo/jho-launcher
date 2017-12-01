@@ -51,6 +51,10 @@ img.emoji {
 
 /* Forms */
 
+div.max-width-350 {
+  max-width: 350px;
+}
+
 input {
   font-family: Overpass;
   font-style: normal;
@@ -172,8 +176,6 @@ html.home{
     font-size: 66px;
   }
 
-
-
   h2 {
     font-size: 36px;
     letter-spacing: -0.02em;
@@ -192,6 +194,12 @@ html.home{
   .highlight-dark {
     background-color: #223C49;
     color: #ffffff;
+  }
+
+  .signup-container {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
