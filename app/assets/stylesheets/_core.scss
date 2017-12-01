@@ -22,6 +22,10 @@ p {
     font-size: 36px;
   }
 
+  &.font-line {
+    line-height: 30px;
+  }
+
 }
 
 img.emoji {
@@ -192,20 +196,11 @@ html.refer{
     font-size: 24px;
   }
 
-  p {
-    font-family: Forum;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 24px;
-    text-align: center;
-
-    &.font-line {
-      line-height: 30px;
-    }
-  }
-
   .highlight {
     background-color: #FFFFFF;
+  }
+
+  .social-links {
+    background-color: #E1E9ED;
   }
 }

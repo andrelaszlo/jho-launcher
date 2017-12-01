@@ -13,14 +13,14 @@
         </div>
 
         <div class="col-sm">
-          <h1>
+          <h1 class="mb-4">
             Parles-en à tes amis
             et surveille la jauge à cadeaux
           </h1>
-          <p class="font-line">
+          <p class="font-line font-big mb-4">
             Copie ce lien et partage-le
           </p>
-          <div><%= root_url %>?ref=<%= @user.referral_code %></div>
+          <p><%= root_url %>?ref=<%= @user.referral_code %></p>
         </div>
       </div>
     </div>
@@ -40,4 +40,18 @@
       </div>
     </div>
   </div>
+
+  <div class="row social-links">
+    <div class="container">
+      <div class="row p-4">
+        <div class="col-sm">
+          <p class="font-big">
+            Retrouvez-nous sur
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%= render "users/footer" %>
 </div>
