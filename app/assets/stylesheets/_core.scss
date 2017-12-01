@@ -63,13 +63,14 @@ html.home{
     background: #F0F5F7;
     margin-top: 19px;
     color: #223C49;
+    text-rendering: geometricPrecision;
   }
 
   #logo {
     display: block;
   }
 
-  h1, h2 {
+  h1, h2, h3 {
     font-family: Overpass;
     font-style: normal;
     font-weight: 600;
@@ -84,6 +85,12 @@ html.home{
   h2 {
     font-size: 36px;
     letter-spacing: -0.02em;
+  }
+
+  h3 {
+    font-weight: normal;
+    line-height: 42px;
+    font-size: 24px;
   }
 
   p {
