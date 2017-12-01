@@ -1,4 +1,14 @@
 <%= form_for @user, :url => { :action => "create" } do |f| %>
-  <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
-  <input class="submit" name="commit" type="submit" value="Oui, je m'inscris" />
+
+  <div class="input-group input-group-lg">
+    <%= f.text_field(:email, :placeholder => "Reseigne ton email", :class => "form-control", :'aria-label' => "Reseigne ton email") %>
+    <span class="input-group-btn">
+      <input class="btn" name="commit" type="submit" value="Oui, je m’inscris">
+    </span>
+  </div>
+
 <% end %>
+
+  
+  
+

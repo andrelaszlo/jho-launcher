@@ -40,10 +40,38 @@ img.emoji {
   padding-bottom: 100px !important;
 }
 
+.mb-100px {
+  margin-bottom: 100px !important;
+}
+
 .highlight-color {
   background-color: #F0F5F7;
 }
 
+
+/* Forms */
+
+input {
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 16px !important;
+
+  border: 0px !important;
+
+  &[type="text"] {
+    color: #909DA4 !important;
+    min-width: 200px;
+  }
+
+  &[type="submit"] {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    color: #ffffff;
+    background-color: #E27170;
+  }
+}
 
 
 /* Footer */
@@ -113,6 +141,14 @@ html.placeholder{
 /* Home */
 
 html.home{
+
+  // Overrides for small screens
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 48px !important;
+    }
+  }
+
   body {
     background-color: #F0F5F7;
     margin-top: 19px;
@@ -135,6 +171,8 @@ html.home{
   h1 {
     font-size: 66px;
   }
+
+
 
   h2 {
     font-size: 36px;
