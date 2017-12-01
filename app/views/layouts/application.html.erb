@@ -30,6 +30,9 @@
   <meta property="og:url" content="<%= root_url %>"/>
   <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+  <!-- Attribution: This page is using twemoji to render emojis in your browser. Check out https://github.com/twitter/twemoji -->
+  <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.1"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= csrf_meta_tags %>
@@ -37,6 +40,15 @@
 <body id="<%= @bodyId %>">
 
 <%= yield %>
+
+<script>
+ var emojiElements = document.getElementsByClassName('emoji');
+ console.log("emoji elements", emojiElements);
+ for (var i=0; i < emojiElements.length; i++) {
+   console.log("parsing", i);
+   twemoji.parse(emojiElements[i]);
+ }
+</script>
 
 </body>
 </html>

@@ -1,3 +1,23 @@
+/* General things */
+
+img.emoji {
+  height: 0.8em;
+  width: 0.8em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+}
+
+.py-100px {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
+/* Footer */
+
+.discrete {
+  color: rgba(34, 60, 73, 0.5);
+}
+
 /* Placeholder */
 
 html.placeholder{
@@ -60,7 +80,7 @@ html.placeholder{
 
 html.home{
   body {
-    background: #F0F5F7;
+    background-color: #F0F5F7;
     margin-top: 19px;
     color: #223C49;
     text-rendering: geometricPrecision;
@@ -108,9 +128,23 @@ html.home{
     &.font-big {
       font-size: 24px;
     }
+
+    &.font-bigger {
+      font-size: 36px;
+    }
   }
 
   .highlight {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
   }
+
+  .highlight-dark {
+    background-color: #223C49;
+    color: #ffffff;
+  }
+}
+
+
+.justify-content-center {
+  .p2 { border: 1px solid green; }
 }
