@@ -1,17 +1,21 @@
-<div class="signup-container">
-
+<!-- Show only on medium size screens and up -->
+<div class="signup-container d-none d-md-block">
   <%= form_for @user, :url => { :action => "create" } do |f| %>
-
     <div class="input-group input-group-lg">
-      <%= f.text_field(:email, :placeholder => "Reseigne ton email", :class => "form-control", :'aria-label' => "Reseigne ton email") %>
+      <%= f.text_field(:email, :placeholder => "Reseigne ton email", :class => "form-control", :'aria-label' => "Reseigne ton email", :type => "email") %>
       <span class="input-group-btn">
         <input class="btn" name="commit" type="submit" value="Oui, je m’inscris">
       </span>
     </div>
-
   <% end %>
-
 </div>
-  
-  
 
+<!-- Show only on smaller screens than medium -->
+<div class="signup-container d-block d-md-none">
+  <%= form_for @user, :url => { :action => "create" } do |f| %>
+    <div class="form-group">
+        <%= f.text_field(:email, :placeholder => "Reseigne ton email", :class => "form-control form-control-lg", :'aria-label' => "Reseigne ton email", :type => "email") %>
+    </div>
+    <input class="form-control-lg" name="commit" type="submit" value="Oui, je m’inscris">
+  <% end %>
+</div>

@@ -8,7 +8,7 @@
       </div>
 
       <div class="row">
-        <div class="col-lg order-lg-2 mb-100px px-lg-5">
+        <div class="col-lg order-lg-2 mb-100px px-lg-5 text-center">
           <h1 class="emoji">
             Enfin ! 💃🏽🎉
           </h1>
@@ -21,7 +21,7 @@
             (que du coton bio. Et absolument rien d’autre)
           </p>
 
-          <h3>
+          <h3 class="mb-4">
             Veux-tu recevoir bientôt les produits jho&nbsp;?
           </h3>
 
@@ -83,13 +83,11 @@
             Rejoins jho et parles-en autour de toi.
           </p>
 
-
           <% if Rails.application.config.ended %>
             <%= render "users/campaign_ended" %>
           <% else %>
             <%= render "users/campaign_ongoing" %>
           <% end %>
-
 
         </div>
       </div>
