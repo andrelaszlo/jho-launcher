@@ -35,7 +35,7 @@ class UsersController < ApplicationController
     else
       @statsd.increment 'signup_error'
       logger.info("Error saving user with email, #{email}")
-      redirect_to root_path, alert: 'Something went wrong!'
+      redirect_to root_path, alert: 'Something went wrong!', host: root_url
     end
   end
 
@@ -48,7 +48,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.nil?
         @statsd.increment 'referral_page_error'
-        format.html { redirect_to root_path, alert: 'Something went wrong!' }
+        format.html { redirect_to root_path, alert: 'Something went wrong!', host: root_url }
       else
         @statsd.increment 'referral_page'
         format.html # refer.html.erb
@@ -60,7 +60,7 @@ class UsersController < ApplicationController
   end
 
   def redirect
-    redirect_to root_path, status: 404
+    redirect_to root_path, status: 404, host: root_url
   end
 
   private
@@ -78,9 +78,8 @@ class UsersController < ApplicationController
 
   def redirect_to_referral_page
     # This is a workaround for some nginx behavior we can't control
-    host = ENV['DEFAULT_HOST'] || request.host
-    puts "Redirecting using host #{host}"
-    redirect_to :controller => 'users', :action => 'refer', :host => host
+    puts "Redirecting using host #{root_url}"
+    redirect_to :controller => 'users', :action => 'refer', :host => root_url
   end
 
   def handle_ip
@@ -99,7 +98,7 @@ class UsersController < ApplicationController
       @statsd.increment 'ip_block'
       logger.info('IP address has already appeared three times in our records.
                  Redirecting user back to landing page.')
-      return redirect_to root_path
+      return redirect_to root_url
     else
       current_ip.count += 1
       current_ip.save
