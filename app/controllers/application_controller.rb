@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  before_filter :statsd_conn
   before_filter :ref_to_cookie
 
   def mobile_device?
@@ -12,6 +13,10 @@ class ApplicationController < ActionController::Base
   end
 
   protected
+
+  def statsd_conn
+    @statsd = Statsd.new 'localhost', 8125
+  end
 
   def ref_to_cookie
     campaign_ended = Rails.application.config.ended

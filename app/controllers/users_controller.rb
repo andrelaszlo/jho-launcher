@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   end
 
   def new
+    @statsd.increment 'landing_page'
     @bodyId = 'home'
     @is_mobile = mobile_device?
 
@@ -28,9 +29,11 @@ class UsersController < ApplicationController
     @user.referrer = User.find_by_referral_code(ref_code) if ref_code
 
     if @user.save
+      @statsd.increment 'signup'
       cookies[:h_email] = { value: @user.email }
       redirect_to_referral_page
     else
+      @statsd.increment 'signup_error'
       logger.info("Error saving user with email, #{email}")
       redirect_to root_path, alert: 'Something went wrong!'
     end
@@ -44,8 +47,10 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.nil?
+        @statsd.increment 'referral_page_error'
         format.html { redirect_to root_path, alert: 'Something went wrong!' }
       else
+        @statsd.increment 'referral_page'
         format.html # refer.html.erb
       end
     end
@@ -91,6 +96,7 @@ class UsersController < ApplicationController
     if current_ip.nil?
       current_ip = IpAddress.create(address: address, count: 1)
     elsif current_ip.count > 2
+      @statsd.increment 'ip_block'
       logger.info('IP address has already appeared three times in our records.
                  Redirecting user back to landing page.')
       return redirect_to root_path
