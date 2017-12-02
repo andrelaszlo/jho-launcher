@@ -79,7 +79,7 @@ input {
 /* Footer */
 
 .discrete {
-  color: rgba(34, 60, 73, 0.5);
+  background-color: #F0F5F7;
 }
 
 /* Placeholder */
@@ -153,12 +153,12 @@ html.home{
 
   body {
     background-color: #F0F5F7;
-    margin-top: 19px;
     color: #223C49;
     text-rendering: geometricPrecision;
   }
 
   #logo {
+    margin-top: 19px;
     display: block;
   }
 
@@ -206,13 +206,13 @@ html.home{
 
 html.refer{
   body {
-    background-color: rgba(226, 113, 112, 0.3);
-    margin-top: 19px;
+    background-color: #F0F5F7;
     color: #223C49;
     text-rendering: geometricPrecision;
   }
 
   #logo {
+    margin-top: 19px;
     display: block;
   }
 
@@ -237,6 +237,10 @@ html.refer{
     font-weight: normal;
     line-height: 42px;
     font-size: 24px;
+  }
+
+  .thanks {
+    background-color: #F6D4D4;
   }
 
   .highlight {
