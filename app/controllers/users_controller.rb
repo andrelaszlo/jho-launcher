@@ -82,7 +82,7 @@ class UsersController < ApplicationController
   def redirect_to_referral_page
     # This is a workaround for some nginx behavior we can't control
     puts "Redirecting using host #{root_url}"
-    redirect_to :controller => 'users', :action => 'refer', :host => root_url
+    redirect_to :controller => 'users', :action => 'refer', :host => root_url.chomp('/')
   end
 
   def handle_ip
