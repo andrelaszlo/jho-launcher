@@ -1,42 +1,46 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie6 <%= @bodyId %>"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7 <%= @bodyId %>"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8 <%= @bodyId %>"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9 <%= @bodyId %>"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="<%= @bodyId %>"> <!--<![endif]-->
-<head>
-  <%= render "layouts/google_analytics" %>
+<html class="<%= @bodyId %>">
+  <head>
+    <%= render "layouts/google_analytics" %>
 
-  <title>jho.</title>
-  <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
-  <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Forum|Overpass:400,600" rel="stylesheet">
+    <title>jho.</title>
+    <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
+    <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Forum|Overpass:400,600" rel="stylesheet">
 
-  <meta property="og:title" content="jho."/>
-  <meta property="og:description" content="Jho"/>
-  <meta property="og:image" content="<%= asset_path("refer/jho-logo.png") %>"/>
-  <meta property="og:url" content="<%= root_url %>"/>
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="jho."/>
+    <meta property="og:description" content="Jho"/>
+    <meta property="og:image" content="<%= asset_path("refer/jho-logo.png") %>"/>
+    <meta property="og:url" content="<%= root_url %>"/>
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <!-- Attribution: This page is using twemoji to render emojis in your browser. Check out https://github.com/twitter/twemoji -->
-  <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.1"></script>
+    <!-- Attribution: This page is using twemoji to render emojis in your browser. Check out https://github.com/twitter/twemoji -->
+    <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.1"></script>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <%= stylesheet_link_tag "application", :media => "all" %>
-  <%= csrf_meta_tags %>
-</head>
-<body id="<%= @bodyId %>">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body id="<%= @bodyId %>">
 
-<%= yield %>
+  <%= yield %>
 
-<script>
- var emojiElements = document.getElementsByClassName('emoji');
- console.log("emoji elements", emojiElements);
- for (var i=0; i < emojiElements.length; i++) {
-   console.log("parsing", i);
-   twemoji.parse(emojiElements[i]);
- }
-</script>
+  <script>
+   var emojiElements = document.getElementsByClassName('emoji');
+   console.log("emoji elements", emojiElements);
+   for (var i=0; i < emojiElements.length; i++) {
+     console.log("parsing", i);
+     twemoji.parse(emojiElements[i]);
+   }
+  </script>
 
-</body>
+  <pre>
+  Debug:
+    <%= request.env['HTTP_X_REAL_IP'] %>
+    <%= request.env['HTTP_X_FORWARDED_FOR'] %>
+  </pre>
+
+  </body>
 </html>
+
+
