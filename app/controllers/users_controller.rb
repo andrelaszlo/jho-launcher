@@ -76,7 +76,8 @@ class UsersController < ApplicationController
     # Presumably, users are doing this from the same device so block
     # their ip after their ip appears three times in the database.
 
-    address = request.remote_ip
+    address = remote_ip
+    puts "Detected IP #{address}"
     return if address.nil?
 
     current_ip = IpAddress.find_by_address(address)
@@ -90,5 +91,13 @@ class UsersController < ApplicationController
       current_ip.count += 1
       current_ip.save
     end
+  end
+
+  def remote_ip
+    # Unfortunately, request.remote_ip seems to prefer HTTP_X_REAL_IP
+    # but in our case HTTP_X_FORWARDED_FOR has the user's ip.
+    forwarded_for = request.env['HTTP_X_FORWARDED_FOR'] || ""
+    forwarded_for_ip = forwarded_for.split(',').first
+    return forwarded_for_ip || request.remote_ip
   end
 end
