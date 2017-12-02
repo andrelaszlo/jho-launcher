@@ -29,7 +29,7 @@ class UsersController < ApplicationController
 
     if @user.save
       cookies[:h_email] = { value: @user.email }
-      redirect_to :controller => 'users', :action => 'refer'
+      redirect_to_referral_page
     else
       logger.info("Error saving user with email, #{email}")
       redirect_to root_path, alert: 'Something went wrong!'
@@ -65,10 +65,16 @@ class UsersController < ApplicationController
 
     email = cookies[:h_email]
     if email && User.find_by_email(email)
-      redirect_to :controller => 'users', :action => 'refer'
+      redirect_to_referral_page
     else
       cookies.delete :h_email
     end
+  end
+
+  def redirect_to_referral_page
+    # This is a workaround for some nginx behavior we can't control
+    host = ENV['DEFAULT_HOST'] || request.host
+    redirect_to :controller => 'users', :action => 'refer', :host => host
   end
 
   def handle_ip
