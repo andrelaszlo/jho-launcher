@@ -35,7 +35,8 @@ class UsersController < ApplicationController
     else
       @statsd.increment 'signup_error'
       logger.info("Error saving user with email, #{email}")
-      redirect_to root_path, alert: 'Something went wrong!', host: root_url
+      puts "Redirecting using host #{root_url}"
+      redirect_to root_url, alert: 'Something went wrong!', host: root_url
     end
   end
 
@@ -48,6 +49,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.nil?
         @statsd.increment 'referral_page_error'
+        puts "Redirecting using host #{root_url}"
         format.html { redirect_to root_url, alert: 'Something went wrong!', host: root_url }
       else
         @statsd.increment 'referral_page'
@@ -60,7 +62,8 @@ class UsersController < ApplicationController
   end
 
   def redirect
-    redirect_to root_path, status: 404, host: root_url
+    puts "Redirectign using #{root_url}"
+    redirect_to root_url, status: 404, host: root_url
   end
 
   private
