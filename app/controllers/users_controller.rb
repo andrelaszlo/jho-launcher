@@ -74,6 +74,7 @@ class UsersController < ApplicationController
   def redirect_to_referral_page
     # This is a workaround for some nginx behavior we can't control
     host = ENV['DEFAULT_HOST'] || request.host
+    puts "Redirecting using host #{host}"
     redirect_to :controller => 'users', :action => 'refer', :host => host
   end
 
