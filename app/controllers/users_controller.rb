@@ -29,7 +29,7 @@ class UsersController < ApplicationController
 
     if @user.save
       cookies[:h_email] = { value: @user.email }
-      redirect_to '/refer-a-friend'
+      redirect_to :controller => 'users', :action => 'refer'
     else
       logger.info("Error saving user with email, #{email}")
       redirect_to root_path, alert: 'Something went wrong!'
@@ -65,7 +65,7 @@ class UsersController < ApplicationController
 
     email = cookies[:h_email]
     if email && User.find_by_email(email)
-      redirect_to '/refer-a-friend'
+      redirect_to :controller => 'users', :action => 'refer'
     else
       cookies.delete :h_email
     end
