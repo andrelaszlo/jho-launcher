@@ -297,4 +297,9 @@ html.refer{
     letter-spacing: 0.2em;
     color: $foreground;
   }
+
+  .vertical-progress-highlight {
+    width: 11px;
+    background-color: $bright-pink;
+  }
 }
