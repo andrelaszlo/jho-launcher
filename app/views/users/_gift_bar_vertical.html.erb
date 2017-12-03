@@ -1,0 +1,78 @@
+<!-- Show only on smaller screens than medium -->
+<div class="row highlight d-block d-sm-none">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm px-0 mt-5">
+        <h2 class="text-center">
+          Règle du jeu
+        </h2>
+
+        <h4 class="text-center my-4">
+          Cadeaux de jho
+        </h4>
+
+        <div class="row vertical-progress mx-0" style="flex-wrap: nowrap">
+          <div class="col text-center px-0 py-0"></div>
+          <div class="col-auto py-0 highlight <%= 'color' if @referralsCount > 0 %>"><div class="bar">&nbsp;</div></div>
+          <div class="col text-center py-0 align-middle"></div>
+        </div>
+
+        <div class="row vertical-progress mx-0" style="flex-wrap: nowrap">
+          <div class="col text-center px-0 py-3">
+            <h5>
+              5<br>
+              amis inscrits
+            </h5>
+          </div>
+          <div class="col-auto highlight <%= 'color' if @referralsCount >= 5 %>"><div class="bar">&nbsp;</div></div>
+          <div class="col text-center py-3 align-middle progress-description">
+            3 euros de remise sur votre 1è commande
+          </div>
+        </div>
+
+        <div class="row vertical-progress mx-0" style="flex-wrap: nowrap">
+          <div class="col text-center px-0 py-3">
+            <h5>
+              10<br>
+              amis inscrits
+            </h5>
+          </div>
+          <div class="col-auto highlight <%= 'color' if @referralsCount >= 10 %>"><div class="bar">&nbsp;</div></div>
+          <div class="col text-center py-3 align-middle progress-description">
+            1 boîte de produits jho offerte
+          </div>
+        </div>
+
+        <div class="row vertical-progress mx-0" style="flex-wrap: nowrap">
+          <div class="col text-center px-0 py-3">
+            <h5>
+              25<br>
+              amis inscrits
+            </h5>
+          </div>
+          <div class="col-auto highlight <%= 'color' if @referralsCount >= 25 %>"><div class="bar">&nbsp;</div></div>
+          <div class="col text-center py-3 align-middle progress-description">
+            2 boîtes gratuites + un totebag jho.
+          </div>
+        </div>
+
+        <div class="row vertical-progress mx-0" style="flex-wrap: nowrap">
+          <div class="col text-center px-0 py-0"></div>
+          <div class="col-auto py-0 highlight <%= 'color' if @referralsCount > 25 %>"><div class="bar">&nbsp;</div></div>
+          <div class="col text-center py-0 align-middle"></div>
+        </div>
+
+        <div class="text-center mt-4 mb-5">
+          <% if @referralsCount == 0 %>
+            <h3>Aucun ami ne s'est inscrit… pour l'instant&nbsp;!</h3>
+          <% elsif @referralsCount == 1 %>
+            <h3>Un ami s'est inscrit</h3>
+          <% else %>
+            <h3><%= @referralsCount %> amis se sont inscrits</h3>
+          <% end %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

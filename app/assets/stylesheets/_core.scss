@@ -3,6 +3,9 @@
 $red: #E27170;
 $bright-pink: #F6D4D4;
 $foreground: #223C49;
+$foreground-light: rgba($foreground, 0.5);
+$medium-gray: #E1E9ED;
+$light-blue: #F0F5F7;
 
 /* General things */
 
@@ -49,7 +52,7 @@ img.emoji {
 }
 
 .highlight-color {
-  background-color: #F0F5F7;
+  background-color: $light-blue;
 }
 
 
@@ -68,15 +71,15 @@ input {
 
   border: 0px !important;
 
-  &[type="text"] {
-    color: #909DA4 !important;
+  &[type="email"] {
+    color: $foreground-light !important;
     min-width: 200px;
   }
 
   &[type="submit"] {
     padding-left: 25px !important;
     padding-right: 25px !important;
-    color: #ffffff;
+    color: white;
     background-color: $red;
   }
 }
@@ -85,7 +88,7 @@ input {
 /* Footer */
 
 .discrete {
-  color: rgba(34, 60, 73, 0.5);
+  color: $foreground-light;
 }
 
 /* Placeholder */
@@ -94,7 +97,7 @@ html.placeholder{
   height: 100%;
 
   body {
-    background: #F0F5F7;
+    background: $light-blue;
     height: 100%;
   }
 
@@ -158,7 +161,7 @@ html.home{
   }
 
   body {
-    background-color: #F0F5F7;
+    background-color: $light-blue;
     color: $foreground;
     text-rendering: geometricPrecision;
   }
@@ -191,12 +194,12 @@ html.home{
   }
 
   .highlight {
-    background-color: #FFFFFF;
+    background-color: white;
   }
 
   .highlight-dark {
     background-color: $foreground;
-    color: #ffffff;
+    color: white;
   }
 
   .signup-container {
@@ -212,7 +215,7 @@ html.home{
 
 html.refer{
   body {
-    background-color: #F0F5F7;
+    background-color: $light-blue;
     color: $foreground;
     text-rendering: geometricPrecision;
   }
@@ -223,6 +226,7 @@ html.refer{
 
   .progress {
     height: 11px;
+    background-color: $medium-gray;
   }
 
   #logo {
@@ -266,7 +270,7 @@ html.refer{
   }
 
   .thanks {
-    background-color: #F6D4D4;
+    background-color: $bright-pink;
   }
 
   .merci-img {
@@ -274,16 +278,16 @@ html.refer{
   }
 
   .highlight {
-    background-color: #FFFFFF;
+    background-color: white;
   }
 
   .social-links {
-    background-color: #E1E9ED;
+    background-color: $medium-gray;
   }
 
   .copy-link {
-    background: #FFFFFF;
-    border: 3px solid #FFFFFF;
+    background: white;
+    border: 3px solid white;
     border-radius: 2px;
     padding: 10px 0;
     width: 320px;
@@ -293,7 +297,7 @@ html.refer{
     font-weight: 600;
     line-height: normal;
     font-size: 16px;
-    color: rgba(34, 60, 73, 0.5);
+    color: $foreground-light;
     max-width: 100%;
   }
 
@@ -307,9 +311,21 @@ html.refer{
     }
   }
 
-  .vertical-progress-highlight {
-    width: 11px;
-    background-color: $bright-pink;
+  .vertical-progress {
+    .bar {
+      width: 11px;
+    }
+    .highlight {
+      flex: initial !important;
+      padding: 0px;
+      background-color: $medium-gray;
+      &.color {
+        background-color: $bright-pink;
+      }
+    }
+    .col {
+      flex: auto;
+    }
   }
 
   div.font-big {
