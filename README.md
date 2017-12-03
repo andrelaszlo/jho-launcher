@@ -1,3 +1,5 @@
+This is jho's modified version of the Prelaunchr project.
+
 Prelaunchr
 ==========
 
