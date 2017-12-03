@@ -42,9 +42,16 @@ class UsersController < ApplicationController
 
   def refer
     @bodyId = 'refer'
-    @is_mobile = mobile_device?
 
     @user = User.find_by_email(cookies[:h_email])
+
+    @stops = User::REFERRAL_STEPS
+
+    @progressMax = @stops.last['count']
+
+    @referralsCount = 7 #@user.referrals.count
+
+    @progressPercent = ((@referralsCount.to_f / @progressMax) * 100).round
 
     respond_to do |format|
       if @user.nil?
