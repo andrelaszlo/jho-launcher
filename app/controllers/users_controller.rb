@@ -44,14 +44,24 @@ class UsersController < ApplicationController
     @bodyId = 'refer'
 
     @user = User.find_by_email(cookies[:h_email])
+    @progressMax = 25.0
+    @referralsCount = @user.referrals.count
 
-    @stops = User::REFERRAL_STEPS
-
-    @progressMax = @stops.last['count']
-
-    @referralsCount = 7 #@user.referrals.count
-
-    @progressPercent = ((@referralsCount.to_f / @progressMax) * 100).round
+    # The following is calculated manually
+    # Not the prettiest algorithm, but it works
+    @progressPercent = 0
+    if @referralsCount <= 5
+      width = 25.0 + 25.0/2
+      @progressPercent = width * @referralsCount/5.0
+    elsif @referralsCount <= 10
+      base = 25.0 + 25.0/2
+      width = 25.0
+      @progressPercent = base + (width * (@referralsCount-5)/5.0)
+    else
+      base = 50.0 + 25.0/2
+      width = 26.0
+      @progressPercent = [base + (width * (@referralsCount-10)/15.0), 100].min
+    end
 
     respond_to do |format|
       if @user.nil?

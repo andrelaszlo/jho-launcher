@@ -1,3 +1,9 @@
+/* Definitions */
+
+$red: #E27170;
+$bright-pink: #F6D4D4;
+$foreground: #223C49;
+
 /* General things */
 
 p {
@@ -71,7 +77,7 @@ input {
     padding-left: 25px !important;
     padding-right: 25px !important;
     color: #ffffff;
-    background-color: #E27170;
+    background-color: $red;
   }
 }
 
@@ -153,7 +159,7 @@ html.home{
 
   body {
     background-color: #F0F5F7;
-    color: #223C49;
+    color: $foreground;
     text-rendering: geometricPrecision;
   }
 
@@ -189,7 +195,7 @@ html.home{
   }
 
   .highlight-dark {
-    background-color: #223C49;
+    background-color: $foreground;
     color: #ffffff;
   }
 
@@ -207,8 +213,16 @@ html.home{
 html.refer{
   body {
     background-color: #F0F5F7;
-    color: #223C49;
+    color: $foreground;
     text-rendering: geometricPrecision;
+  }
+
+  .bg-progress {
+    background-color: $bright-pink !important;
+  }
+
+  .progress {
+    height: 11px;
   }
 
   #logo {
@@ -216,12 +230,11 @@ html.refer{
     display: block;
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
     font-family: Overpass;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-align: center;
   }
 
   h1 {
@@ -237,6 +250,19 @@ html.refer{
     font-weight: normal;
     line-height: 42px;
     font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  .progress-description {
+    font-family: Overpass;
+    font-size: 16px;
   }
 
   .thanks {
@@ -269,6 +295,6 @@ html.refer{
   .font-social {
     text-decoration: none;
     letter-spacing: 0.2em;
-    color: #223C49;
+    color: $foreground;
   }
 }

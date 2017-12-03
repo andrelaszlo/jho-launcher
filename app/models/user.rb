@@ -13,21 +13,6 @@ class User < ActiveRecord::Base
   before_create :create_referral_code
   after_create :send_welcome_email
 
-  REFERRAL_STEPS = [
-    {
-      'count' => 5,
-      'title' => '3 euros de remise sur votre 1è commande'
-    },
-    {
-      'count' => 10,
-      'html' => '1 boîte de produits jho offerte'
-    },
-    {
-      'count' => 25,
-      'html' => '2 boîtes gratuites  + un totebag jho.'
-    }
-  ]
-
   private
 
   def create_referral_code

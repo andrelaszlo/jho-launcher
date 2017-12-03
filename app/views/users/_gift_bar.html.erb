@@ -1,11 +1,45 @@
-<div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: <%= @progressPercent %>%" aria-valuenow="<%= @referralsCount %>"
-       aria-valuemin="0" aria-valuemax="<%= @progressMax %>"></div>
+<div class="row mb-1 mt-5">
+  <div class="col">
+    <h4>Amis inscrits</h4>
+  </div>
+  <div class="col text-center"><h5>5</h5></div>
+  <div class="col text-center"><h5>10</h5></div>
+  <div class="col text-center"><h5>25</h5></div>
 </div>
 
-<%= @progressPercent %>
-<br>
-<%= @referralsCount %>
-<br>
+<div class="progress">
+  <div class="progress-bar bg-progress" role="progressbar"
+       style="width: <%= @progressPercent %>%"
+       aria-valuenow="<%= @referralsCount %>"
+       aria-valuemin="0"
+       aria-valuemax="<%= @progressMax %>"></div>
+</div>
 
-<%= @progressMax %>
+<div class="row mt-3">
+  <div class="col">
+    <h4>Cadeaux de jho</h4>
+  </div>
+  <div class="col text-center progress-description">
+    3 euros<br>
+    de remise sur votre<br>
+    1è commande
+  </div>
+  <div class="col text-center progress-description">
+    1 boîte de produits<br>
+    jho offerte
+  </div>
+  <div class="col text-center progress-description">
+    2 boîtes gratuites<br>
+    + un totebag jho.
+  </div>
+</div>
+
+<div class="text-center mt-4">
+  <% if @referralsCount == 0 %>
+    <h3>Aucun ami ne s'est inscrit… pour l'instant&nbsp;!</h3>
+  <% elsif @referralsCount == 1 %>
+    <h3>Un ami s'est inscrit</h3>
+  <% else %>
+    <h3><%= @referralsCount %> amis se sont inscrits</h3>
+  <% end %>
+</div>
