@@ -269,6 +269,10 @@ html.refer{
     background-color: #F6D4D4;
   }
 
+  .merci-img {
+    max-width: 100%;
+  }
+
   .highlight {
     background-color: #FFFFFF;
   }
@@ -290,16 +294,31 @@ html.refer{
     line-height: normal;
     font-size: 16px;
     color: rgba(34, 60, 73, 0.5);
+    max-width: 100%;
   }
 
-  .font-social {
-    text-decoration: none;
-    letter-spacing: 0.2em;
-    color: $foreground;
+  .social {
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      letter-spacing: 0.2em;
+      color: $foreground;
+    }
   }
 
   .vertical-progress-highlight {
     width: 11px;
     background-color: $bright-pink;
+  }
+
+  div.font-big {
+    margin-bottom: 0px;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    font-size: 24px;
   }
 }
