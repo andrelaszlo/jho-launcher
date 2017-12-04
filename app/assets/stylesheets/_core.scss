@@ -325,10 +325,11 @@ html.refer{
   }
 
   .copy-link {
+    display: inline-block;
     background: white;
     border-radius: 2px;
     padding: 10px;
-    width: 340px;
+    width: 270px;
     font-family: $overpass-font;
     font-style: normal;
     font-weight: 600;
