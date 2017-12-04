@@ -50,6 +50,17 @@ class UsersController < ApplicationController
     end
   end
 
+  def referral
+    ref = params[:id]
+
+    unless User.find_by_referral_code(ref).nil?
+      h_ref = { value: ref, expires: 1.week.from_now }
+      cookies[:h_ref] = h_ref
+    end
+
+    redirect_to root_url, host: root_url
+  end
+
   def refer
     @bodyId = 'refer'
 
@@ -79,13 +90,11 @@ class UsersController < ApplicationController
 
       @progressPercent = [@progressPercent, 5].max
 
-      @referral_link = "#{root_url}?ref=#{@user.referral_code}"
+      @referral_link = "#{root_url.chomp '/'}/r/#{@user.referral_code}"
       @referral_link_urlencoded = CGI.escape @referral_link
       @twitter_msg = {:text => "@Myjhocom arrive sur #{@referral_link} ! ENFIN des #tampons et #serviettes livrés chez vous...et 100% #cotonbio",
                       :url => " "}.to_param.gsub "+", "%20"
     end
-
-
 
     respond_to do |format|
       if @user.nil?

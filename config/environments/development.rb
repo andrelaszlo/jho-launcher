@@ -46,5 +46,7 @@ Prelaunchr::Application.configure do
   # For mailer configs
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => ENV['DEFAULT_MAILER_HOST'], :protocol => 'https' }
+  config.action_mailer.default_url_options = { :host => ENV['DEFAULT_MAILER_HOST'], :protocol => 'http' }
+
+  config.action_controller.default_url_options[:protocol] = 'http'
 end

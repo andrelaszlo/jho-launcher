@@ -326,16 +326,15 @@ html.refer{
 
   .copy-link {
     background: white;
-    border: 3px solid white;
     border-radius: 2px;
-    padding: 10px 0;
-    width: 320px;
-    margin: 20px auto 0;
+    padding: 10px;
+    width: 340px;
     font-family: $overpass-font;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     font-size: 16px;
+    margin: 0px auto;
     color: $foreground-light;
     max-width: 100%;
   }

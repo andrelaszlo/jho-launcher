@@ -7,7 +7,7 @@ class UserMailer < ActionMailer::Base
     @host = config.action_controller.default_url_options[:host]
     @mailer_host = config.action_mailer.default_url_options[:host] || ""
     @twitter_message = "Follow jho on Twitter"
-    @ref_url = "#{@mailer_host}?ref=#{@user.referral_code}"
+    @ref_url = "#{@mailer_host.chomp '/'}/r/#{@user.referral_code}"
     querystring = {:email => @user.email}.to_param
     @login_url = "#{@host}/refer-a-friend/?#{querystring}"
 
