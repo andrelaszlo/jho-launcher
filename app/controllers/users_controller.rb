@@ -65,9 +65,9 @@ class UsersController < ApplicationController
         width = 26.0
         @progressPercent = [base + (width * (@referralsCount-10)/15.0), 100].min
       end
-    end
 
-    @progressPercent = [@progressPercent, 5].max
+      @progressPercent = [@progressPercent, 5].max
+    end
 
     respond_to do |format|
       if @user.nil?
