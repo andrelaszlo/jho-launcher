@@ -58,6 +58,21 @@ img.emoji {
   background-color: $light-blue;
 }
 
+.alert {
+  display: inline-block;
+  .close {
+    color: $foreground;
+    text-shadow: none;
+    opacity: 1;
+  }
+}
+
+.alert-danger {
+  color: $foreground;
+  background-color: $bright-pink;
+  border: none;
+}
+
 
 /* Forms */
 

@@ -19,3 +19,11 @@
     <input class="form-control-lg" name="commit" type="submit" value="Oui, je m’inscris">
   <% end %>
 </div>
+
+
+<% flash.each do |name, msg| -%>
+  <div class="alert alert-danger mt-3">
+    <%= msg %>
+  </div>
+<% end -%>
+

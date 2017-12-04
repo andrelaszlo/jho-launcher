@@ -1,3 +1,4 @@
+# coding: utf-8
 class UsersController < ApplicationController
   before_filter :skip_first_page, only: :new
   before_filter :handle_ip, only: :create
@@ -121,7 +122,7 @@ class UsersController < ApplicationController
       @statsd.increment 'ip_block'
       logger.info("IP address #{address} has already appeared #{current_ip.count} times in our records.
                    Redirecting user back to landing page.")
-      return redirect_to root_url, alert: "Too many attempts from your IP" # TODO: fix language
+      return redirect_to root_url, alert: "Oups ! Trop d’emails ont été renseignés depuis cette adresse IP"
     else
       current_ip.count += 1
       current_ip.save
