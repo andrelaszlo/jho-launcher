@@ -67,6 +67,8 @@ class UsersController < ApplicationController
       end
     end
 
+    @progressPercent = [@progressPercent, 5].max
+
     respond_to do |format|
       if @user.nil?
         @statsd.increment 'referral_page_error'
