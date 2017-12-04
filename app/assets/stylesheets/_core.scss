@@ -119,6 +119,10 @@ input {
 
 .discrete {
   color: $foreground-light;
+
+  a {
+    color: $foreground-light;
+  }
 }
 
 /* Placeholder */
