@@ -6,6 +6,7 @@ $foreground: #223C49;
 $foreground-light: rgba($foreground, 0.5);
 $medium-gray: #E1E9ED;
 $light-blue: #F0F5F7;
+$blue: #d9e9eb;
 $green: #60BD7A;
 $overpass-font: Overpass, sans-serif;
 $forum-font: Forum, sans-serif;
@@ -224,7 +225,7 @@ html.home{
 
   h3 {
     font-weight: normal;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .highlight {
@@ -242,14 +243,43 @@ html.home{
     margin-right: auto;
   }
 
+  .hero {
+    background-image: image-url('home/hero.png');
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .play-button {
+      cursor: pointer;
+      margin: 20% 40px 0 auto;
+      padding-top: 44px;
+      text-align: center;
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+      background-color: $red;
+      color: white;
+      font-size: 13px;
+      font-family: $overpass-font;
+
+      .fa {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-bottom: 4px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .play-button {
+        margin: 7% auto;
+      }
+    }
+  }
+
   .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
   .embed-container iframe,
   .embed-container object,
   .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-}
-
-.justify-content-center {
-  .p2 { border: 1px solid green; }
 }
 
 html.refer{
