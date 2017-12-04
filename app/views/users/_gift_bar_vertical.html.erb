@@ -57,8 +57,21 @@
         </div>
 
         <div class="row vertical-progress mx-0" style="flex-wrap: nowrap">
+          <div class="col text-center px-0 py-3">
+            <h5>
+              <div class="font-numbers">50</div>
+              amies inscrites
+            </h5>
+          </div>
+          <div class="col-auto highlight <%= 'color' if @referralsCount >= 50 %>"><div class="bar">&nbsp;</div></div>
+          <div class="col text-center py-3 align-middle progress-description">
+             …surprise&nbsp;!
+          </div>
+        </div>
+
+        <div class="row vertical-progress mx-0" style="flex-wrap: nowrap">
           <div class="col text-center px-0 py-0"></div>
-          <div class="col-auto py-0 highlight <%= 'color' if @referralsCount > 25 %>"><div class="bar">&nbsp;</div></div>
+          <div class="col-auto py-0 highlight <%= 'color' if @referralsCount > 50 %>"><div class="bar">&nbsp;</div></div>
           <div class="col text-center py-0 align-middle"></div>
         </div>
 
