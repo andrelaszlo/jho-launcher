@@ -1,8 +1,5 @@
 # coding: utf-8
 class UsersController < ApplicationController
-  #before_filter :skip_first_page, only: :new
-  before_filter :handle_ip, only: :create
-
   def placeholder
     @bodyId = 'placeholder'
 
@@ -33,6 +30,8 @@ class UsersController < ApplicationController
       redirect_to_referral_page
       return
     end
+
+    return redirect_to root_url, alert: "Oups ! Trop d’emails ont été renseignés depuis cette adresse IP" if handle_ip
 
     @user = User.new(email: email)
     @user.referrer = User.find_by_referral_code(ref_code) if ref_code
@@ -103,17 +102,6 @@ class UsersController < ApplicationController
     cookies[:h_email] = { value: email }
   end
 
-  def skip_first_page
-    return if Rails.application.config.ended
-
-    email = cookies[:h_email]
-    if email && User.find_by_email(email)
-      redirect_to_referral_page
-    else
-      cookies.delete :h_email
-    end
-  end
-
   def redirect_to_referral_page
     # This is a workaround for some nginx behavior we can't control
     puts "Redirecting using host #{root_url}"
@@ -136,7 +124,7 @@ class UsersController < ApplicationController
       @statsd.increment 'ip_block'
       logger.info("IP address #{address} has already appeared #{current_ip.count} times in our records.
                    Redirecting user back to landing page.")
-      return redirect_to root_url, alert: "Oups ! Trop d’emails ont été renseignés depuis cette adresse IP"
+      return true
     else
       current_ip.count += 1
       current_ip.save
