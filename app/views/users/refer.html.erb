@@ -25,6 +25,15 @@
           </p>
 
           <div class="fb-share-button" data-href="<%= @referral_link %>" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<%= @referral_link_urlencoded %>&amp;src=sdkpreparse"><img src="<%= asset_path('refer/share_fb.png') %>"></a></div>
+
+          <iframe
+          src="https://platform.twitter.com/widgets/tweet_button.html?size=s&<%= @twitter_msg %>"
+          width="61"
+          height="20"
+          title="Twitter Tweet Button"
+          style="border: 0; overflow: hidden;">
+          </iframe>
+
         </div>
       </div>
     </div>

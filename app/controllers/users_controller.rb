@@ -81,6 +81,8 @@ class UsersController < ApplicationController
 
       @referral_link = "#{root_url}?ref=#{@user.referral_code}"
       @referral_link_urlencoded = CGI.escape @referral_link
+      @twitter_msg = {:text => "@Myjhocom arrive sur #{@referral_link} ! ENFIN des #tampons et #serviettes livrés chez vous...et 100% #cotonbio",
+                      :url => " "}.to_param.gsub "+", "%20"
     end
 
 
