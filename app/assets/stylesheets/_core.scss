@@ -271,9 +271,19 @@ html.home{
 
     @media (max-width: 991px) {
       .play-button {
-        margin: 7% auto;
+        margin: 10% 30% 10% auto !important;
       }
     }
+
+    @media (max-width: 1199px) {
+      .play-button {
+        margin: 24% -47px 0px auto;
+      }
+    }
+  }
+
+  #video-modal {
+    background-color: black;
   }
 
   .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }

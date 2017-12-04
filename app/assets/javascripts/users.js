@@ -1,3 +1,10 @@
+$(function() {
+  $("#video-modal").iziModal({
+    width: '90%',
+    radius: 0
+  });
+})
+
 function selectText(text) {
   var range, selection;
   if (document.body.createTextRange) {

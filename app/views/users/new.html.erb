@@ -34,7 +34,7 @@
         </div>
 
         <div class="col-lg order-lg-1 mb-100px pt-lg-5 text-center">
-          <div class="play-button">
+          <div class="play-button" data-izimodal-open="#video-modal" data-izimodal-transitionin="fadeInDown">
             <div class="fa fa-play" aria-hidden="true"></div>
             <div>Voir la vidéo</div>
           </div>
@@ -104,4 +104,11 @@
 
   <%= render "users/footer" %>
 
+</div>
+
+
+<div id="video-modal">
+  <div class="embed-container">
+    <iframe src='https://player.vimeo.com/video/245712135?title=0&byline=0&portrait=0' scrolling="no" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
 </div>
