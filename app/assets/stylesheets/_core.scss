@@ -6,6 +6,7 @@ $foreground: #223C49;
 $foreground-light: rgba($foreground, 0.5);
 $medium-gray: #E1E9ED;
 $light-blue: #F0F5F7;
+$green: #60BD7A;
 
 /* General things */
 
@@ -221,7 +222,7 @@ html.refer{
   }
 
   .bg-progress {
-    background-color: $bright-pink !important;
+    background-color: $green;
   }
 
   .progress {
@@ -320,7 +321,7 @@ html.refer{
       padding: 0px;
       background-color: $medium-gray;
       &.color {
-        background-color: $bright-pink;
+        background-color: $green;
       }
     }
     .col {
