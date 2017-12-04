@@ -12,14 +12,17 @@
           <img src="<%= asset_path('refer/merci.svg') %>" class="merci-img">
         </div>
 
-        <div class="col-lg mb-5">
+        <div class="col-lg mb-5 text-center">
           <h1 class="mb-4 text-center">
             Parle de jho aux femmes de ton entourage !
           </h1>
           <p class="font-line font-big mb-4">
             Copie et envoie-leur ce lien... et surveille la jauge à cadeaux
           </p>
-          <p class="copy-link"><%= root_url %>?ref=<%= @user.referral_code %></p>
+
+          <p class="copy-link mb-3"><%= @referral_link %></p>
+
+          <div class="fb-share-button" data-href="<%= @referral_link %>" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<%= @referral_link_urlencoded %>&amp;src=sdkpreparse"><img src="<%= asset_path('refer/share_fb.png') %>"></a></div>
         </div>
       </div>
     </div>

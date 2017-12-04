@@ -78,7 +78,12 @@ class UsersController < ApplicationController
       end
 
       @progressPercent = [@progressPercent, 5].max
+
+      @referral_link = "#{root_url}?ref=#{@user.referral_code}"
+      @referral_link_urlencoded = CGI.escape @referral_link
     end
+
+
 
     respond_to do |format|
       if @user.nil?
