@@ -31,7 +31,9 @@ class UsersController < ApplicationController
       return
     end
 
-    return redirect_to root_url, alert: "Oups ! Trop d’emails ont été renseignés depuis cette adresse IP" if handle_ip
+    if ip_block
+      return redirect_to root_url, alert: "Oups ! Trop d’emails ont été renseignés depuis cette adresse IP"
+    end
 
     @user = User.new(email: email)
     @user.referrer = User.find_by_referral_code(ref_code) if ref_code
@@ -108,7 +110,7 @@ class UsersController < ApplicationController
     redirect_to :controller => 'users', :action => 'refer', :host => root_url.chomp('/')
   end
 
-  def handle_ip
+  def ip_block
     # Prevent someone from gaming the site by referring themselves.
     # Presumably, users are doing this from the same device so block
     # their ip after their ip appears three times in the database.
@@ -129,6 +131,8 @@ class UsersController < ApplicationController
       current_ip.count += 1
       current_ip.save
     end
+
+    return false
   end
 
   def remote_ip
