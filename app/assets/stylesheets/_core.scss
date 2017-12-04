@@ -385,3 +385,22 @@ html.refer{
     top: -6px;
   }
 }
+
+html.policy {
+  body {
+    background-color: $light-blue;
+    color: $foreground;
+    text-rendering: geometricPrecision;
+    font-family: $overpass-font;
+  }
+
+  #logo {
+    margin-top: 19px;
+    display: block;
+  }
+
+  p {
+    text-align: left;
+    font-family: $overpass-font;
+  }
+}

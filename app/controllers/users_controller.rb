@@ -113,6 +113,7 @@ class UsersController < ApplicationController
   end
 
   def policy
+    @bodyId = 'policy'
   end
 
   def redirect
