@@ -1,6 +1,6 @@
 # coding: utf-8
 class UsersController < ApplicationController
-  before_filter :skip_first_page, only: :new
+  #before_filter :skip_first_page, only: :new
   before_filter :handle_ip, only: :create
 
   def placeholder
@@ -26,12 +26,20 @@ class UsersController < ApplicationController
   def create
     ref_code = cookies[:h_ref]
     email = params[:user][:email]
+
+    @user = User.find_by_email(email)
+    if not @user.nil?
+      sign_in email
+      redirect_to_referral_page
+      return
+    end
+
     @user = User.new(email: email)
     @user.referrer = User.find_by_referral_code(ref_code) if ref_code
 
     if @user.save
       @statsd.increment 'signup'
-      cookies[:h_email] = { value: @user.email }
+      sign_in @user.email
       redirect_to_referral_page
     else
       @statsd.increment 'signup_error'
@@ -90,6 +98,10 @@ class UsersController < ApplicationController
   end
 
   private
+
+  def sign_in(email)
+    cookies[:h_email] = { value: email }
+  end
 
   def skip_first_page
     return if Rails.application.config.ended
