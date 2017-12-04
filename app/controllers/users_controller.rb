@@ -53,7 +53,9 @@ class UsersController < ApplicationController
   def refer
     @bodyId = 'refer'
 
-    @user = User.find_by_email(cookies[:h_email])
+    user_email = params[:email] || cookies[:h_email]  # Prioritize query string
+
+    @user = User.find_by_email(user_email)
 
     if not @user.nil?
       @progressMax = 25.0
