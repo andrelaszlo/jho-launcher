@@ -7,6 +7,9 @@ silence_warnings do
 end
 
 Prelaunchr::Application.configure do
+  config.logger = Logger.new(STDOUT)
+  config.log_level = :debug
+
   # Settings specified here will take precedence over those in config/application.rb
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
