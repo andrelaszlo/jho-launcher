@@ -59,6 +59,7 @@ module Prelaunchr
 
     if ENV['DEFAULT_HOST']
       config.action_controller.default_url_options = { :host => ENV['DEFAULT_HOST'] }
+      config.action_controller.default_url_options[:protocol] = 'https'
     end
 
     config.ip_limit = ENV.fetch('IP_LIMIT', 3).to_i
