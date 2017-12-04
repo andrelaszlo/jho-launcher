@@ -9,7 +9,7 @@
 
         <div class="row mb-1 mt-5">
           <div class="col">
-            <h4>Amis inscrits</h4>
+            <h4>Amies inscrites</h4>
           </div>
           <div class="col text-center"><h5>5</h5></div>
           <div class="col text-center"><h5>10</h5></div>
@@ -31,7 +31,7 @@
           <div class="col text-center progress-description">
             3 euros<br>
             de remise sur votre<br>
-            1è commande
+            1ère commande
           </div>
           <div class="col text-center progress-description">
             1 boîte de produits<br>
@@ -39,17 +39,17 @@
           </div>
           <div class="col text-center progress-description">
             2 boîtes gratuites<br>
-            + un totebag jho.
+            + un joli totebag
           </div>
         </div>
 
         <div class="text-center mt-4 mb-5">
           <% if @referralsCount == 0 %>
-            <h3>Aucun ami ne s'est inscrit… pour l'instant&nbsp;!</h3>
+            <h3>Aucune amie ne s'est inscrite… pour l'instant&nbsp;!</h3>
           <% elsif @referralsCount == 1 %>
-            <h3>Un ami s'est inscrit</h3>
+            <h3>Une amie s'est inscrite</h3>
           <% else %>
-            <h3><%= @referralsCount %> amis se sont inscrits</h3>
+            <h3><%= @referralsCount %> amies se sont inscrites</h3>
           <% end %>
         </div>
       </div>

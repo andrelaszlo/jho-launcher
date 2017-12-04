@@ -21,12 +21,12 @@
           <div class="col text-center px-0 py-3">
             <h5>
               5<br>
-              amis inscrits
+              amies inscrites
             </h5>
           </div>
           <div class="col-auto highlight <%= 'color' if @referralsCount >= 5 %>"><div class="bar">&nbsp;</div></div>
           <div class="col text-center py-3 align-middle progress-description">
-            3 euros de remise sur votre 1è commande
+            3 euros de remise sur votre 1ère commande
           </div>
         </div>
 
@@ -34,7 +34,7 @@
           <div class="col text-center px-0 py-3">
             <h5>
               10<br>
-              amis inscrits
+              amies inscrites
             </h5>
           </div>
           <div class="col-auto highlight <%= 'color' if @referralsCount >= 10 %>"><div class="bar">&nbsp;</div></div>
@@ -47,12 +47,12 @@
           <div class="col text-center px-0 py-3">
             <h5>
               25<br>
-              amis inscrits
+              amies inscrites
             </h5>
           </div>
           <div class="col-auto highlight <%= 'color' if @referralsCount >= 25 %>"><div class="bar">&nbsp;</div></div>
           <div class="col text-center py-3 align-middle progress-description">
-            2 boîtes gratuites + un totebag jho.
+            2 boîtes gratuites + un joli totebag
           </div>
         </div>
 
@@ -64,11 +64,11 @@
 
         <div class="text-center mt-4 mb-5">
           <% if @referralsCount == 0 %>
-            <h3>Aucun ami ne s'est inscrit… pour l'instant&nbsp;!</h3>
+            <h3>Aucune amie ne s'est inscrite… pour l'instant&nbsp;!</h3>
           <% elsif @referralsCount == 1 %>
-            <h3>Un ami s'est inscrit</h3>
+            <h3>Une amie s'est inscrite</h3>
           <% else %>
-            <h3><%= @referralsCount %> amis se sont inscrits</h3>
+            <h3><%= @referralsCount %> amies se sont inscrites</h3>
           <% end %>
         </div>
 
