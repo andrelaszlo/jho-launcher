@@ -20,9 +20,7 @@
             Copie et envoie-leur ce lien... et surveille la jauge à cadeaux
           </p>
 
-          <div class="copy-link mb-3" onclick="selectText(this)" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Copié !">
-            <%= @referral_link %>
-          </div><br>
+          <div class="copy-link mb-3" onclick="selectText(this)" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Copié !"><%= @referral_link %></div><br>
 
           <div class="fb-share-button"
                data-href="<%= @referral_link %>"
