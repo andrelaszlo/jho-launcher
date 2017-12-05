@@ -1,3 +1,7 @@
+if (location.hostname == 'www.jho.fr') {
+  location.href = location.href.replace('www.', '');
+}
+
 $(function() {
   $("#video-modal").iziModal({
     width: '90%',
