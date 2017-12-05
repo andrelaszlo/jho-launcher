@@ -11,7 +11,7 @@ module UsersHelper
   end
 
   def generate_referral_id(length=6)
-    o = [('a'..'z'), ('A'..'Z')].map(&:to_a).flatten
+    o = [('a'..'z'), ('A'..'Z'), ('0'..'9')].map(&:to_a).flatten
     (0...length).map { o[rand(o.length)] }.join
   end
   module_function :generate_referral_id
