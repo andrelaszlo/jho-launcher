@@ -45,6 +45,7 @@
 
     <%= yield %>
 
+    <% unless @noCookieBanner %>
     <script>
      window.addEventListener("load", function(){
          window.cookieconsent.initialise({
@@ -68,6 +69,7 @@
              }
          })});
     </script>
+    <% end %>
 
   </body>
 </html>

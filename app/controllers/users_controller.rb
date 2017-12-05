@@ -2,6 +2,7 @@
 class UsersController < ApplicationController
   def placeholder
     @bodyId = 'placeholder'
+    @noCookieBanner = true
 
     respond_to do |format|
       format.html # placeholder.html.erb
