@@ -8,7 +8,8 @@ gem 'devise'
 gem 'pg'
 gem 'rails', '4.2.5.2'
 gem 'unicorn'
-gem "statsd-ruby", '1.4.0'
+gem 'statsd-ruby', '1.4.0'
+gem 'rubyzip', '>= 1.0.0'
 
 # Gems used only for assets and not required
 # in production environments by default.

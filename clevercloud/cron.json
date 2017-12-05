@@ -1,0 +1,3 @@
+[
+    "0 7 * * * $ROOT/userdata_cron.sh"
+]
