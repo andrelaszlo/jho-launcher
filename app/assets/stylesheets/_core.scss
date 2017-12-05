@@ -153,6 +153,16 @@ html.placeholder{
                 animation: fadein 5s ease-in;
     }
   }
+
+  .contact-footer {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    padding: 0.5em;
+    font-family: $forum-font;
+    font-size: 14px;
+  }
 }
 
 @keyframes fadein {
