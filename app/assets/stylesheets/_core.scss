@@ -19,9 +19,27 @@ $forum-font: Forum, sans-serif;
   margin-bottom: 100px;
   text-align: center;
 
-  img {
+  #logo {
     display: inline-block;
     margin-bottom: -63px;
+  }
+
+  #bookmark {
+    background-image: image-url('home/bookmark.svg');
+    height: 130px;
+    width: 130px;
+    margin-left: auto;
+    margin-right: 0%;
+    color: white;
+    font-family: $montserrat-font;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3em;
+
+    .icon {
+      width: 36px;
+      margin: 6px;
+    }
   }
 }
 
