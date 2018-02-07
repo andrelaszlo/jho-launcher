@@ -1,9 +1,9 @@
 <div class="container-fluid">
-  <div class="row highlight">
+  <div class="row highlight logo">
     <div class="container">
-      <div class="row logo mb-5">
+      <div class="row mb-5">
         <div class="col">
-          <img src="<%= asset_path('refer/jho-logo.svg') %>" class="mx-auto" id="logo">
+          <img src="<%= asset_path('jho_logo.svg') %>" class="mx-auto" id="logo">
         </div>
       </div>
     </div>
@@ -13,7 +13,7 @@
     <div class="container">
 
       <div class="row hero">
-        <div class="col-lg order-lg-2 mt-100px mb-100px px-lg-5 text-center">
+        <div class="col-lg order-lg-2 mb-100px px-lg-5 text-center">
           <h1>
             Enfin !
           </h1>
@@ -37,10 +37,15 @@
         </div>
 
         <div class="col-lg order-lg-1 mb-100px pt-lg-5 text-center">
+          <img src="<%= asset_path('home/play.svg') %>"
+            class="play-button"
+            data-izimodal-open="#video-modal" data-izimodal-transitionin="fadeInDown">
+          <!--
           <div class="play-button" data-izimodal-open="#video-modal" data-izimodal-transitionin="fadeInDown">
             <div class="fa fa-play" aria-hidden="true"></div>
             <div>Voir la vidéo</div>
           </div>
+          -->
         </div>
       </div>
     </div>

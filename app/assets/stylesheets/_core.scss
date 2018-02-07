@@ -5,7 +5,7 @@ $bright-pink: #F6D4D4;
 $foreground: #223C49;
 $foreground-light: rgba($foreground, 0.5);
 $medium-gray: #E1E9ED;
-$light-blue: #F0F5F7;
+$light-blue: #e3edf1;
 $blue: #d9e9eb;
 $green: #60BD7A;
 $montserrat-font: Montserrat, sans-serif;
@@ -15,15 +15,13 @@ $forum-font: Forum, sans-serif;
 /* General things */
 
 .row.logo {
-  padding: 0px;
   height: 63px;
-  margin: 0px;
-  margin-bottom: 63px;
+  margin-bottom: 100px;
   text-align: center;
 
   img {
-    line-height: 63px;
-    display: inline block;
+    display: inline-block;
+    margin-bottom: -63px;
   }
 }
 
@@ -287,33 +285,19 @@ html.home{
 
     .play-button {
       cursor: pointer;
-      margin: 20% 40px 0 auto;
+      margin: 5% auto 0 240px;
       padding-top: 44px;
-      text-align: center;
-      width: 120px;
-      height: 120px;
-      border-radius: 60px;
-      background-color: $red;
-      color: white;
-      font-size: 13px;
-      font-family: $montserrat-font;
-
-      .fa {
-        font-size: 30px;
-        margin-left: 10px;
-        margin-bottom: 4px;
-      }
     }
 
     @media (max-width: 991px) {
       .play-button {
-        margin: 10% 30% 10% auto !important;
+        margin: 0 auto auto 10% !important;
       }
     }
 
     @media (max-width: 1199px) {
       .play-button {
-        margin: 24% -47px 0px auto;
+        margin: 32% auto 0px 300px;
       }
     }
   }
