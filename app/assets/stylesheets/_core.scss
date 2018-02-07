@@ -5,6 +5,7 @@ $bright-pink: #F6D4D4;
 $foreground: #223C49;
 $foreground-light: rgba($foreground, 0.5);
 $medium-gray: #E1E9ED;
+$light-gray: eef3f6;
 $light-blue: #e3edf1;
 $blue: #d9e9eb;
 $green: #60BD7A;
@@ -54,6 +55,10 @@ p {
   letter-spacing: 0.038em;
   font-size: 20px;
   text-align: center;
+
+  &.font-smaller {
+    font-size: 16px;
+  }
 
   &.font-small {
     font-size: 24px;
@@ -143,7 +148,9 @@ input {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  font-size: 16px !important;
+  font-size: 21px !important;
+  text-align: center;
+  border-radius: 0px !important;
 
   border: 0px !important;
 
@@ -153,10 +160,22 @@ input {
   }
 
   &[type="submit"] {
+    &:hover {
+      background-color: $foreground;
+    }
+    font-weight: 800;
+    color: white;
+    font-size: 16px !important;
+    text-transform: uppercase;
+    background-color: $foreground;
+    width: 230px;
+    padding: 13px;
+    /*
     padding-left: 25px !important;
     padding-right: 25px !important;
     color: white;
     background-color: $red;
+    */
   }
 }
 
@@ -251,9 +270,14 @@ html.home{
   }
 
   body {
+    font-family: $montserrat-font;
+    font-size: 13px;
+    text-rendering: geometricPrecision;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+
     background-color: $light-blue;
     color: $foreground;
-    text-rendering: geometricPrecision;
   }
 
   h1, h2, h3 {
@@ -303,7 +327,7 @@ html.home{
 
     .play-button {
       cursor: pointer;
-      margin: 5% auto 0 240px;
+      margin: 14% auto 0 390px;
       padding-top: 44px;
     }
 
@@ -315,8 +339,30 @@ html.home{
 
     @media (max-width: 1199px) {
       .play-button {
-        margin: 32% auto 0px 300px;
+        margin: 47% auto 0px 320px
       }
+    }
+  }
+
+  .row.icons {
+    align-content: end;
+    text-align: center;
+  }
+
+  .row.headers {
+    h2 {
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2.1px;
+    }
+  }
+
+  .row.values {
+    .col {
+      padding-left: 4em;
+      padding-right: 4em;
+      text-align: justify;
     }
   }
 
