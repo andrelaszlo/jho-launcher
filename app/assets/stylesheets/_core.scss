@@ -8,27 +8,52 @@ $medium-gray: #E1E9ED;
 $light-blue: #F0F5F7;
 $blue: #d9e9eb;
 $green: #60BD7A;
-$overpass-font: Overpass, sans-serif;
+$montserrat-font: Montserrat, sans-serif;
+$cardo-font: Cardo, 'Times New Roman', serif;
 $forum-font: Forum, sans-serif;
 
 /* General things */
 
+.row.logo {
+  padding: 0px;
+  height: 63px;
+  margin: 0px;
+  margin-bottom: 63px;
+  text-align: center;
+
+  img {
+    line-height: 63px;
+    display: inline block;
+  }
+}
+
 p {
   margin-bottom: 0px;
 
-  font-family: $forum-font;
+  font-family: $cardo-font;
+  
   font-style: normal;
   font-weight: normal;
   line-height: normal;
+  letter-spacing: 0.038em;
   font-size: 20px;
   text-align: center;
 
   &.font-small {
-    font-size: 16px;
+    font-size: 24px;
+  }
+
+  &.font-cursive {
+    font-style: italic;
   }
 
   &.font-big {
-    font-size: 24px;
+    font-size: 29px;
+  }
+
+  &.font-fine {
+    font-family: $montserrat-font;
+    font-size: 13px;
   }
 
   &.font-bigger {
@@ -55,6 +80,10 @@ img.emoji {
   margin-bottom: 100px !important;
 }
 
+.mt-100px {
+  margin-top: 100px !important;
+}
+
 .highlight-color {
   background-color: $light-blue;
 }
@@ -76,7 +105,7 @@ img.emoji {
 
 // Cookie consent bar
 .cc-window {
-  font-family: $overpass-font;
+  font-family: $montserrat-font;
   font-size: 14px;
   &.cc-floating {
     padding: 14px;
@@ -94,7 +123,7 @@ div.max-width-350 {
 }
 
 input {
-  font-family: $overpass-font;
+  font-family: $montserrat-font;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -211,13 +240,8 @@ html.home{
     text-rendering: geometricPrecision;
   }
 
-  #logo {
-    margin-top: 19px;
-    display: block;
-  }
-
   h1, h2, h3 {
-    font-family: $overpass-font;
+    font-family: $montserrat-font;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -225,7 +249,9 @@ html.home{
   }
 
   h1 {
-    font-size: 66px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 
   h2 {
@@ -270,7 +296,7 @@ html.home{
       background-color: $red;
       color: white;
       font-size: 13px;
-      font-family: $overpass-font;
+      font-family: $montserrat-font;
 
       .fa {
         font-size: 30px;
@@ -318,13 +344,8 @@ html.refer{
     background-color: $medium-gray;
   }
 
-  #logo {
-    margin-top: 19px;
-    display: block;
-  }
-
   h1, h2, h3, h4 {
-    font-family: $overpass-font;
+    font-family: $montserrat-font;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -354,7 +375,7 @@ html.refer{
   }
 
   .progress-description {
-    font-family: $overpass-font;
+    font-family: $montserrat-font;
     font-size: 16px;
   }
 
@@ -380,7 +401,7 @@ html.refer{
     border-radius: 2px;
     padding: 10px;
     width: 270px;
-    font-family: $overpass-font;
+    font-family: $montserrat-font;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -441,16 +462,11 @@ html.policy {
     background-color: $light-blue;
     color: $foreground;
     text-rendering: geometricPrecision;
-    font-family: $overpass-font;
-  }
-
-  #logo {
-    margin-top: 19px;
-    display: block;
+    font-family: $montserrat-font;
   }
 
   p {
     text-align: left;
-    font-family: $overpass-font;
+    font-family: $montserrat-font;
   }
 }

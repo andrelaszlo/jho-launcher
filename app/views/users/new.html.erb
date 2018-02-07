@@ -1,30 +1,33 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row highlight">
     <div class="container">
-      <div class="row mb-5">
+      <div class="row logo mb-5">
         <div class="col">
           <img src="<%= asset_path('refer/jho-logo.svg') %>" class="mx-auto" id="logo">
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container">
 
       <div class="row hero">
-        <div class="col-lg order-lg-2 mb-100px px-lg-5 text-center">
+        <div class="col-lg order-lg-2 mt-100px mb-100px px-lg-5 text-center">
           <h1>
             Enfin !
-            <img src="<%= asset_path('refer/emojis.png') %>" class="emoji">
           </h1>
-          <p class="font-big mb-1">
-            Une marque de tampons<br>
-            et serviettes hygiéniques<br>
-            100 % coton bio.
+          <p class="font-big mb-2">
+            Une marque de tampons et<br>
+            serviettes hygiéniques <br>
+            en coton bio. 0 produit toxique.
           </p>
-          <p class="font-small mb-4">
-            (que du coton bio. Et absolument rien d’autre)
+          <p class="font-cursive font-small mb-4">
+            Livrés chez vous, on peut même s’abonner !
           </p>
-
-          <h3 class="mb-4">
-            Veux-tu recevoir bientôt les produits jho&nbsp;?
-          </h3>
+          <p class="font-fine mb-3">
+            Des règles saines, ça vous parle ? Soyez la première informée
+          </p>
 
           <% if Rails.application.config.ended %>
             <%= render "users/campaign_ended" %>
