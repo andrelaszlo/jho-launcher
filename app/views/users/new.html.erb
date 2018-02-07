@@ -2,14 +2,14 @@
   <div class="row highlight logo">
     <div class="container">
       <div class="row mb-5">
-        <div class="col">
+        <div class="col-sm">
           <!-- empty -->
         </div>
-        <div class="col">
+        <div class="col-sm">
           <img src="<%= asset_path('jho_logo.svg') %>" class="mx-auto" id="logo">
         </div>
-        <div class="col">
-          <div id="bookmark">
+        <div class="col-sm">
+          <div id="bookmark" class="d-none d-md-block">
             <img src="<%= asset_path('home/reveil.svg') %>" class="icon"><br>
             Les produits<br>
             Jho arrivent<br>
@@ -40,11 +40,21 @@
             Des règles saines, ça vous parle ? Soyez la première informée
           </p>
 
-          <% if Rails.application.config.ended %>
-            <%= render "users/campaign_ended" %>
-          <% else %>
-            <%= render "users/campaign_ongoing" %>
-          <% end %>
+          <div class="signup-container">
+            <%= form_for @user, :url => { :action => "create" } do |f| %>
+              <div class="form-group mb-4">
+                <%= f.text_field(:email, :class => "form-control", :'aria-label' => "Renseigne ton email", :type => "email") %>
+              </div>
+              <input name="commit" type="submit" class="btn btn-primary" value="Oui, je m’inscris">
+            <% end %>
+          </div>
+
+          <% flash.each do |name, msg| -%>
+            <div class="alert alert-danger mt-3">
+              <%= msg %>
+            </div>
+          <% end -%>
+
         </div>
 
         <div class="col-lg order-lg-1 mb-100px pt-lg-5 text-center">
@@ -65,45 +75,39 @@
   <div class="row highlight">
     <div class="container">
 
-      <div class="row pt-4 pb-4 icons">
-        <div class="col">
+      <div class="row values">
+        <div class="col-md py-4">
           <img src="<%= asset_path('home/coton.svg') %>">
-        </div>
-        <div class="col">
-          <img src="<%= asset_path('home/truck.svg') %>">
-        </div>
-        <div class="col">
-          <img src="<%= asset_path('home/truck.svg') %>">
-        </div>
-      </div>
 
-      <div class="row headers">
-        <div class="col pb-2">
           <h2>
             Des produits sains
           </h2>
+
+          <p>
+            0 chlore, 0 phtalate, 0 glyphosate. Que du coton bio. Et tout aussi efficaces.
+          </p>
         </div>
-        <div class="col">
+        <div class="col-md py-4">
+          <img src="<%= asset_path('home/truck.svg') %>">
+
           <h2>
             Livrés chez vous
           </h2>
+
+          <p>
+            Vous pourrez commander vos produits sur jho.fr, on livrera à votre porte. Vous pourrez même vous abonner.
+          </p>
         </div>
-        <div class="col">
+        <div class="col-md py-4">
+          <img src="<%= asset_path('home/truck.svg') %>">
+
           <h2>
             Merci pour elles&nbsp;!
           </h2>
-        </div>
-      </div>
 
-      <div class="row pb-5 values">
-        <div class="col">
-          0 chlore, 0 phtalate, 0 glyphosate. Que du coton bio. Et tout aussi efficaces.
-        </div>
-        <div class="col">
-          Vous pourrez commander vos produits sur jho.fr, on livrera à votre porte. Vous pourrez même vous abonner.
-        </div>
-        <div class="col">
-          A chacune de vos commandes, des produits seront distribués à des femmes dans le besoin.
+          <p>
+            A chacune de vos commandes, des produits seront distribués à des femmes dans le besoin.
+          </p>
         </div>
       </div>
     </div>
@@ -111,20 +115,36 @@
 
   <div class="row highlight-dark">
     <div class="container">
-      <div class="row py-100px">
+      <div class="row py-5">
         <div class="col-sm text-center">
-          <h2>
-            Prête pour des règles plus saines, plus justes&nbsp;?<br>
-          </h2>
-          <p class="font-big mb-4">
-            Rejoins jho et parles-en autour de toi.
+          <p class="font-medium mb-2">
+            Prête pour des produits plus sains et des règles sereines&nbsp;?
+          </p>
+          <p class="mb-4 font-fine">
+            <span class="font-bold">Rejoins jho et parles-en autour de toi.</span>
+            <span class="font-italic pl-2">(Pssst, il y a des cadeaux à gagner !)</span>
           </p>
 
-          <% if Rails.application.config.ended %>
-            <%= render "users/campaign_ended" %>
-          <% else %>
-            <%= render "users/campaign_ongoing" %>
+          <%= form_for @user, :url => { :action => "create" } do |f| %>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-5 mb-2">
+                  <%= f.text_field(:email, :class => "form-control", :'aria-label' => "Renseigne ton email", :type => "email") %>
+                </div>
+                <div class="col-md-3">
+                  <input name="commit" type="submit" class="btn btn-primary" value="Oui, je m’inscris">
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+            </div>
           <% end %>
+
+          <% flash.each do |name, msg| -%>
+            <div class="alert alert-danger mt-3">
+              <%= msg %>
+            </div>
+          <% end -%>
 
         </div>
       </div>

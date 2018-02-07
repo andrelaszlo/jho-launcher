@@ -1,11 +1,11 @@
 /* Definitions */
 
-$red: #E27170;
+$red: #de6565;
 $bright-pink: #F6D4D4;
 $foreground: #223C49;
 $foreground-light: rgba($foreground, 0.5);
 $medium-gray: #E1E9ED;
-$light-gray: eef3f6;
+$light-gray: #eef3f6;
 $light-blue: #e3edf1;
 $blue: #d9e9eb;
 $green: #60BD7A;
@@ -64,6 +64,11 @@ p {
     font-size: 24px;
   }
 
+  &.font-medium {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+
   &.font-cursive {
     font-style: italic;
   }
@@ -75,6 +80,7 @@ p {
   &.font-fine {
     font-family: $montserrat-font;
     font-size: 13px;
+    letter-spacing: 1px;
   }
 
   &.font-bigger {
@@ -85,6 +91,14 @@ p {
     line-height: 30px;
   }
 
+}
+
+.font-bold {
+  font-weight: 800;
+}
+
+.font-italic {
+  font-style: italic;
 }
 
 img.emoji {
@@ -107,6 +121,10 @@ img.emoji {
 
 .highlight-color {
   background-color: $light-blue;
+}
+
+.highlight-footer {
+  background-color: $light-gray;
 }
 
 .alert {
@@ -170,12 +188,6 @@ input {
     background-color: $foreground;
     width: 230px;
     padding: 13px;
-    /*
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-    color: white;
-    background-color: $red;
-    */
   }
 }
 
@@ -319,6 +331,16 @@ html.home{
     margin-right: auto;
   }
 
+  form .container {
+    input {
+      height: 50px;
+      &[type="submit"] {
+        background-color: $red;
+      }
+    }
+  }
+  
+
   .hero {
     background-image: image-url('home/hero.png');
     background-position: left bottom;
@@ -327,7 +349,7 @@ html.home{
 
     .play-button {
       cursor: pointer;
-      margin: 14% auto 0 390px;
+      margin: 7% auto 0 255px;
       padding-top: 44px;
     }
 
@@ -339,30 +361,35 @@ html.home{
 
     @media (max-width: 1199px) {
       .play-button {
-        margin: 47% auto 0px 320px
+        margin: 28% auto 0px 316px;
       }
     }
   }
 
-  .row.icons {
-    align-content: end;
-    text-align: center;
-  }
-
-  .row.headers {
-    h2 {
-      font-size: 16px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 2.1px;
-    }
-  }
-
   .row.values {
-    .col {
-      padding-left: 4em;
-      padding-right: 4em;
-      text-align: justify;
+    .col-md {
+      text-align: center;
+
+      h2 {
+        font-size: 16px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2.1px;
+
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+
+      p {
+        font-family: $montserrat-font;
+        font-size: 13px;
+        line-height: 1.5em;
+        letter-spacing: 0.1em;
+        text-align: justify;
+
+        max-width: 270px;
+        margin: auto;
+      }
     }
   }
 
