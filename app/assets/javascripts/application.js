@@ -11,3 +11,16 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require_tree .
+
+$(function() {
+  var msgs = ["Oui, je m’inscris", "Mais grave !", "Oh oui !", "Oui carrément !"];
+  var btn = document.querySelector("input[type='submit']");
+
+  function updateMsg() {
+    let msg = msgs.shift();
+    msgs.push(msg);
+    btn.value = msg;
+  }
+
+  setInterval(updateMsg, 500);
+});
