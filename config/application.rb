@@ -55,7 +55,7 @@ module Prelaunchr
     config.ended = ENV['CAMPAIGN_ENDED'].to_s == 'true'
 
     # decides whether the prelaunch campaign has started or not (show placeholder)
-    config.started = ENV['CAMPAIGN_STARTED'].to_s == 'true'
+    config.started = ENV['CAMPAIGN_STARTED'].to_s == 'false'
 
     if ENV['DEFAULT_HOST']
       config.action_controller.default_url_options = { :host => ENV['DEFAULT_HOST'] }

@@ -7,11 +7,9 @@ $foreground-light: rgba($foreground, 0.5);
 $medium-gray: #E1E9ED;
 $light-gray: #eef3f6;
 $light-blue: #e3edf1;
-$blue: #d9e9eb;
 $green: #60BD7A;
 $montserrat-font: Montserrat, sans-serif;
 $cardo-font: Cardo, 'Times New Roman', serif;
-$forum-font: Forum, sans-serif;
 
 /* General things */
 
@@ -249,7 +247,7 @@ html.placeholder{
     text-align: center;
     width: 100%;
     padding: 0.5em;
-    font-family: $forum-font;
+    font-family: $cardo-font;
     font-size: 14px;
   }
 }
@@ -524,7 +522,7 @@ html.refer{
 
   div.font-big {
     margin-bottom: 0px;
-    font-family: $forum-font;
+    font-family: $cardo-font;
     font-style: normal;
     font-weight: normal;
     line-height: normal;
