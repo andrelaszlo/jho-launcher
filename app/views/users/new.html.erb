@@ -9,11 +9,8 @@
           <img src="<%= asset_path('jho_logo.svg') %>" class="mx-auto" id="logo">
         </div>
         <div class="col-sm">
-          <div id="bookmark" class="d-none d-md-block">
-            <img src="<%= asset_path('home/reveil.svg') %>" class="icon"><br>
-            Les produits<br>
-            Jho arrivent<br>
-            au printemps
+          <div class="bookmark d-none d-md-block ml-auto mr-0">
+            <%= render "users/bookmark" %>
           </div>
         </div>
       </div>
@@ -26,7 +23,7 @@
       <div class="row hero">
         <div class="col-lg order-lg-2 mb-4 px-lg-5 text-center">
           <h1>
-            Enfin !
+            Enfin&nbsp;!
           </h1>
           <p class="font-big mb-2" id="value">
             Une marque de tampons et
@@ -34,7 +31,7 @@
             en coton bio. 0 produit toxique.
           </p>
           <p class="font-cursive font-small mb-4">
-            Livrés chez vous, on peut même s’abonner !
+            Livrés chez vous, on peut même s’abonner&nbsp;!
           </p>
           <p class="font-fine mb-3">
             Des règles saines, ça vous parle ? Soyez la première informée
@@ -61,13 +58,15 @@
           <img src="<%= asset_path('home/play.svg') %>"
             class="play-button"
             data-izimodal-open="#video-modal" data-izimodal-transitionin="fadeInDown">
-          <!--
-          <div class="play-button" data-izimodal-open="#video-modal" data-izimodal-transitionin="fadeInDown">
-            <div class="fa fa-play" aria-hidden="true"></div>
-            <div>Voir la vidéo</div>
-          </div>
-          -->
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row highlight">
+    <div class="col-sm">
+      <div class="bookmark d-sm-block d-md-none mx-auto mb-2">
+        <%= render "users/bookmark" %>
       </div>
     </div>
   </div>
@@ -122,7 +121,7 @@
           </p>
           <p class="mb-4 font-fine">
             <span class="font-bold">Rejoins jho et parles-en autour de toi.</span>
-            <span class="font-italic pl-2">(Pssst, il y a des cadeaux à gagner !)</span>
+            <span class="font-italic pl-2">(Pssst, il y a des cadeaux à gagner&nbsp;!)</span>
           </p>
 
           <%= form_for @user, :url => { :action => "create" } do |f| %>

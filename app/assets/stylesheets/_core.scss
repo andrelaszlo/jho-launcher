@@ -1,9 +1,8 @@
 /* Definitions */
 
-$red: #de6565;
+$red: #e27170;
 $bright-pink: #f5d4ce;
-$foreground: #333e49;
-//$foreground: #223C49;
+$foreground: #323f4a;
 $foreground-light: rgba($foreground, 0.5);
 $medium-gray: #E1E9ED;
 $light-gray: #eef3f6;
@@ -22,24 +21,6 @@ $cardo-font: Cardo, 'Times New Roman', serif;
   #logo {
     display: inline-block;
     margin-bottom: -63px;
-  }
-
-  #bookmark {
-    background-image: image-url('home/bookmark.svg');
-    height: 130px;
-    width: 130px;
-    margin-left: auto;
-    margin-right: 0%;
-    color: white;
-    font-family: $montserrat-font;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1.3em;
-
-    .icon {
-      width: 36px;
-      margin: 6px;
-    }
   }
 }
 
@@ -102,7 +83,7 @@ p {
 }
 
 .font-bold {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .font-italic {
@@ -181,8 +162,21 @@ input {
   border: 0px !important;
 
   &[type="email"] {
-    color: $foreground-light !important;
+    color: $foreground !important;
     min-width: 200px;
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $medium-gray;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: $medium-gray;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $medium-gray;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $medium-gray;
+    }
   }
 
   &[type="submit"] {
@@ -324,6 +318,24 @@ html.home{
     font-size: 22px;
   }
 
+  .bookmark {
+   
+    background-image: image-url('home/bookmark.svg');
+    height: 130px;
+    width: 130px;
+    color: white;
+    font-family: $montserrat-font;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3em;
+    text-align: center;
+
+    .icon {
+      width: 36px;
+      margin: 6px;
+    }
+  }
+
   .signup-container {
     max-width: 450px;
     margin-left: auto;
@@ -388,7 +400,7 @@ html.home{
         font-family: $montserrat-font;
         font-size: 13px;
         line-height: 1.5em;
-        letter-spacing: 0.1em;
+        letter-spacing: 1.2px;
         text-align: justify;
 
         max-width: 270px;
