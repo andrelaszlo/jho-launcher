@@ -1,8 +1,9 @@
 /* Definitions */
 
 $red: #de6565;
-$bright-pink: #F6D4D4;
-$foreground: #223C49;
+$bright-pink: #f5d4ce;
+$foreground: #333e49;
+//$foreground: #223C49;
 $foreground-light: rgba($foreground, 0.5);
 $medium-gray: #E1E9ED;
 $light-gray: #eef3f6;
@@ -96,10 +97,6 @@ p {
 
   &.font-bigger {
     font-size: 36px;
-  }
-
-  &.font-line {
-    line-height: 30px;
   }
 
 }
@@ -427,15 +424,16 @@ html.refer{
   }
 
   h1, h2, h3, h4 {
-    font-family: $montserrat-font;
+    font-family: $cardo-font;
     font-style: normal;
-    font-weight: 600;
+    font-weight: normal;
     line-height: normal;
   }
 
   h1 {
+    font-weight: normal;
+    font-size: 31px;
     line-height: 44px;
-    font-size: 36px;
   }
 
   h2 {
@@ -448,17 +446,11 @@ html.refer{
     font-size: 24px;
   }
 
-  h4 {
-    font-size: 20px;
-  }
-
-  h5 {
-    font-size: 16px;
-  }
-
-  .progress-description {
+  h4, h5, .progress-description {
     font-family: $montserrat-font;
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
   }
 
   .thanks {
@@ -471,6 +463,10 @@ html.refer{
 
   .highlight {
     background-color: white;
+  }
+
+  .highlight-color {
+    background-color: $bright-pink;
   }
 
   .social-links {
@@ -521,13 +517,11 @@ html.refer{
   }
 
   div.font-big {
-    margin-bottom: 0px;
     font-family: $cardo-font;
-    font-style: normal;
     font-weight: normal;
     line-height: normal;
     text-align: center;
-    font-size: 24px;
+    font-size: 31px;
   }
 
   .font-numbers {
@@ -535,7 +529,19 @@ html.refer{
   }
 
   .fb-share-button {
-    top: -6px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: -2px;
+    display: inline-block;
+    vertical-align: top !important;
+  }
+
+  .twitter-share-button {
+    border: 0;
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: top !important;
   }
 }
 
