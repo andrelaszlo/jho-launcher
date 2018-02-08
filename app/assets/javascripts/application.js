@@ -13,7 +13,7 @@
 //= require_tree .
 
 $(function() {
-  var msgs = ["Oui, je m’inscris", "Mais grave !", "Oh oui !", "Oui carrément !"];
+  var msgs = ["Oui, je m’inscris", "Mais grave !", "Oh oui !", "Carrément !"];
   var btn = document.querySelector("input[type='submit']");
 
   function updateMsg() {

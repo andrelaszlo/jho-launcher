@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid highlight-color">
   <div class="row highlight logo">
     <div class="container">
       <div class="row mb-5">
@@ -13,14 +13,14 @@
             <img src="<%= asset_path('home/reveil.svg') %>" class="icon"><br>
             Les produits<br>
             Jho arrivent<br>
-            en AVRIL
+            au printemps
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row highlight-color">
     <div class="container">
 
       <div class="row hero">
@@ -28,9 +28,9 @@
           <h1>
             Enfin !
           </h1>
-          <p class="font-big mb-2">
-            Une marque de tampons et<br>
-            serviettes hygiéniques <br>
+          <p class="font-big mb-2" id="value">
+            Une marque de tampons et
+            serviettes hygiéniques
             en coton bio. 0 produit toxique.
           </p>
           <p class="font-cursive font-small mb-4">
@@ -43,7 +43,7 @@
           <div class="signup-container">
             <%= form_for @user, :url => { :action => "create" } do |f| %>
               <div class="form-group mb-4">
-                <%= f.text_field(:email, :class => "form-control", :'aria-label' => "Renseigne ton email", :type => "email") %>
+                <%= f.text_field(:email, :placeholder => "Email", :class => "form-control", :'aria-label' => "Renseigne ton email", :type => "email") %>
               </div>
               <input name="commit" type="submit" class="btn btn-primary" value="Oui, je m’inscris">
             <% end %>
@@ -130,7 +130,7 @@
               <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-5 mb-2">
-                  <%= f.text_field(:email, :class => "form-control", :'aria-label' => "Renseigne ton email", :type => "email") %>
+                  <%= f.text_field(:email, :placeholder => "Email", :class => "form-control", :'aria-label' => "Renseigne ton email", :type => "email") %>
                 </div>
                 <div class="col-md-3">
                   <input name="commit" type="submit" class="btn btn-primary" value="Oui, je m’inscris">
