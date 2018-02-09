@@ -166,16 +166,16 @@ input {
     min-width: 200px;
 
     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-      color: $medium-gray;
+      color: $foreground-light;
     }
     &::-moz-placeholder { /* Firefox 19+ */
-      color: $medium-gray;
+      color: $foreground-light;
     }
     &:-ms-input-placeholder { /* IE 10+ */
-      color: $medium-gray;
+      color: $foreground-light;
     }
     &:-moz-placeholder { /* Firefox 18- */
-      color: $medium-gray;
+      color: $foreground-light;
     }
   }
 
