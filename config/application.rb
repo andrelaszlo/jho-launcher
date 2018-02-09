@@ -65,7 +65,7 @@ module Prelaunchr
     config.ip_limit = ENV.fetch('IP_LIMIT', 3).to_i
 
     config.social_facebook = 'https://www.facebook.com/JHO-441801649550835/'
-    config.social_twitter = 'https://twitter.com/MYJHOcom'
+    config.social_twitter = 'https://twitter.com/_jho_fr'
     config.social_instagram = 'https://www.instagram.com/jho.fr/?hl=fr'
   end
 end
