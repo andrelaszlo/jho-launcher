@@ -55,9 +55,9 @@
         </div>
 
         <div class="col-lg order-lg-1 mb-100px pt-lg-5 text-center">
-          <img src="<%= asset_path('home/play.svg') %>"
-            class="play-button"
-            data-izimodal-open="#video-modal" data-izimodal-transitionin="fadeInDown">
+          <a href="#" class="trigger">
+            <img src="<%= asset_path('home/play.svg') %>" class="play-button">
+          </a>
         </div>
       </div>
     </div>
@@ -154,9 +154,4 @@
 
 </div>
 
-
-<div id="video-modal">
-  <div class="embed-container">
-    <iframe src='https://player.vimeo.com/video/245712135?title=0&byline=0&portrait=0' scrolling="no" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-  </div>
-</div>
+<div id="modal-iframe"></div>

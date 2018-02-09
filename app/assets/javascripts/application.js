@@ -23,4 +23,26 @@ $(function() {
   }
 
   setInterval(updateMsg, 500);
+
+  $("#modal-iframe").iziModal({
+    iframe: true,
+    iframeHeight: 338,
+    openFullscreen: true,
+    transitionIn: 'fadeInDown',
+    iframeURL: "https://player.vimeo.com/video/245712135?title=0&byline=0&portrait=0&autoplay=1",
+    background: 'black',
+    headerColor: 'black',
+    title: 'jho.fr',
+    closeOnEscape: true,
+    closeButton: true,
+    
+  });
+
+  $(document).on('click', '.trigger', function (event) {
+    event.preventDefault();
+    $('#modal-iframe').iziModal('open')
+  });
 });
+
+
+
