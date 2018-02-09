@@ -22,7 +22,7 @@ $(function() {
     btn.value = msg;
   }
 
-  setInterval(updateMsg, 500);
+  setInterval(updateMsg, 1400);
 
   $("#modal-iframe").iziModal({
     iframe: true,
