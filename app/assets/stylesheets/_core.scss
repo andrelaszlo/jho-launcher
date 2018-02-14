@@ -11,6 +11,37 @@ $green: #60BD7A;
 $montserrat-font: Montserrat, sans-serif;
 $cardo-font: Cardo, 'Times New Roman', serif;
 
+$animation-time: 1.2s;
+
+/* Animation */
+
+.animated {
+  -webkit-animation-duration: $animation-time;
+  animation-duration: $animation-time;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  &.slideInDown {
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+
+    animation-name: slideInDown;
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
 /* General things */
 
 .row.logo {
@@ -538,7 +569,7 @@ html.refer{
   .fb-share-button {
     height: 20px;
     line-height: 20px;
-    margin-top: -2px;
+    margin-top: -1.5px;
     display: inline-block;
     vertical-align: top !important;
   }
