@@ -21,7 +21,7 @@
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"><metadata
      id="metadata1023"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs1021"><path
        inkscape:connector-curvature="0"
        d="M 11.7313,-4.63811e-7 V 27.5087 c 0,1.3982 -0.1828,2.6748 -0.518,3.8299 -0.3352,1.1551 -0.7618,2.2493 -1.31025,3.222 -0.54848,0.9727 -1.1579,1.8542 -1.82826,2.6445 C 7.40443,37.9954 6.7036,38.6945 6.00277,39.3328 4.2964,40.8222 2.4072,42.0077 0.274238,42.8892 L 0,42.2813 C 1.34072,41.4302 2.55956,40.3359 3.62604,38.9985 4.5097,37.8738 5.36288,36.4452 6.15512,34.743 6.94737,33.0104 7.34349,30.9434 7.34349,28.5421 V 6.04886 C 7.34349,5.28896 7.22161,4.55945 7.00831,3.86033 6.79501,3.16122 6.12465,2.79646 5.05817,2.76606 V 2.15814 Z"
@@ -93,13 +93,13 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.6823529"
-     inkscape:cx="172.44755"
-     inkscape:cy="213.22378"
+     inkscape:zoom="4.7584126"
+     inkscape:cx="63.076918"
+     inkscape:cy="81.939173"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="Layer_1" /><style
+     inkscape:current-layer="g1441" /><style
      type="text/css"
      id="style972">
 	.st0{fill:#FFFFFF;}
@@ -113,10 +113,10 @@
 </style><g
      id="g1441"
      transform="matrix(0.35079874,0,0,0.35079874,0,5.4920126)"><path
-       inkscape:connector-curvature="0"
-       id="circle974"
-       d="M 25.505859,10 A 222,222 0 0 0 0,112.97266 a 222,222 0 0 0 222,222 222,222 0 0 0 222,-222 A 222,222 0 0 0 418.54297,10 Z"
-       style="fill:#ffffff;fill-opacity:1" /><g
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.29026589;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 221.99895,-107.09258 A 222.00052,221.03105 0 0 0 5.3224244e-8,113.93677 222.00052,221.03105 0 0 0 221.99895,334.97266 222.00052,221.03105 0 0 0 443.99792,113.93677 222.00052,221.03105 0 0 0 221.99895,-107.09258 Z"
+       id="path1553"
+       inkscape:connector-curvature="0" /><g
        id="g1416"><g
          id="g982"
          transform="translate(-26,-157.02734)"><path

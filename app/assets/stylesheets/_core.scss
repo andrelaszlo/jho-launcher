@@ -381,13 +381,30 @@ html.home{
       }
     }
   }
-  
+
+  @media (max-width: 991px) {
+    .hero-full {
+      background-image: image-url('home/hero_left.jpg');
+      background-position: center bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: 991px) {
+    .hero {
+      background-image: image-url('home/hero_top.jpg');
+      background-position: center top;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
 
   .hero {
-    background-image: image-url('home/hero.jpg');
-    background-position: center bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
+
+    .play-col {
+      min-height: 250px;
+    }
 
     .play-button {
       cursor: pointer;
