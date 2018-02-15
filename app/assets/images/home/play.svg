@@ -52,229 +52,443 @@
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="Calque_1" />
+     inkscape:current-layer="g1793" />
   <title
      id="title1622">voirVideo</title>
   <g
      id="g1793"
      transform="matrix(0.66574352,0,0,0.66574352,-19.446368,-17.162872)">
-    <circle
-       id="circle1624"
+    <path
        style="fill:#de6565"
-       r="93.879997"
-       cy="119.66"
-       cx="123.09" />
-    <text
-       id="text1626"
+       d="M 216.96999,119.66 A 93.879997,93.879997 0 0 1 123.09,213.54 93.879997,93.879997 0 0 1 29.209999,119.66 93.879997,93.879997 0 0 1 123.09,25.780006 93.879997,93.879997 0 0 1 216.96999,119.66 Z"
+       id="circle1624" />
+    <g
+       aria-label="V"
+       transform="matrix(0.69,-0.72,0.72,0.69,66.56,70.44)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(0.69,-0.72,0.72,0.69,66.56,70.44)">V</text>
-    <text
-       id="text1628"
+       id="text1626">
+      <path
+         d="M 0.0622663,-8.7172823 3.5740857,0 H 4.8194118 L 8.3561377,-8.7172823 H 7.0983584 L 4.2216553,-1.3324989 1.3449521,-8.7172823 Z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1000" />
+    </g>
+    <g
+       aria-label="O"
+       transform="matrix(0.79,-0.61,0.61,0.79,73.95,62.83)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(0.79,-0.61,0.61,0.79,73.95,62.83)">O</text>
-    <text
-       id="text1630"
+       id="text1628">
+      <path
+         d="m 5.0560237,-8.7920019 c -2.5653716,0 -4.5827998,1.9302554 -4.5827998,4.4209075 0,2.4906521 2.0174282,4.45826722 4.5827998,4.45826722 2.5653717,0 4.5827999,-1.96761512 4.5827999,-4.45826722 0,-2.4781988 -2.0174282,-4.4209075 -4.5827999,-4.4209075 z m 0.012453,1.0709804 c 1.8430825,0 3.349927,1.481938 3.349927,3.3499271 0,1.8679891 -1.5068445,3.37483357 -3.349927,3.37483357 -1.8430826,0 -3.3872868,-1.50684447 -3.3872868,-3.37483357 0,-1.8679891 1.531751,-3.3499271 3.3872868,-3.3499271 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1003" />
+    </g>
+    <g
+       aria-label="I"
+       transform="matrix(0.86,-0.5,0.5,0.86,84.2,55.41)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(0.86,-0.5,0.5,0.86,84.2,55.41)">I</text>
-    <text
-       id="text1632"
+       id="text1630">
+      <path
+         d="M 1.245326,-8.7172823 V 0 h 1.195513 v -8.7172823 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1006" />
+    </g>
+    <g
+       aria-label="R"
+       transform="matrix(0.92,-0.4,0.4,0.92,89.37,52.37)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(0.92,-0.4,0.4,0.92,89.37,52.37)">R</text>
-    <text
-       id="text1634"
+       id="text1632">
+      <path
+         d="M 8.2440584,0 6.214177,-2.9514227 c 1.2328727,-0.4234109 1.9053488,-1.4072184 1.9053488,-2.8268901 0,-1.8679891 -1.2577793,-2.9389695 -3.4620064,-2.9389695 H 1.245326 V 0 h 1.195513 v -2.7148108 h 2.2166804 c 0.1743456,0 0.336238,-0.012453 0.4856772,-0.024907 L 6.8741998,0 Z M 2.440839,-3.7982444 v -3.8356042 h 2.2166804 c 1.481938,0 2.3163064,0.6351162 2.3163064,1.8928955 0,1.2951391 -0.8343684,1.9427087 -2.3163064,1.9427087 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1009" />
+    </g>
+    <g
+       transform="rotate(-17.06,210.37128,-308.5603)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(-17.06,210.37128,-308.5603)" />
-    <text
-       id="text1636"
+       id="text1634" />
+    <g
+       aria-label="L"
+       transform="matrix(0.98,-0.19,0.19,0.98,105.08,46.53)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(0.98,-0.19,0.19,0.98,105.08,46.53)">L</text>
-    <text
-       id="text1638"
+       id="text1636">
+      <path
+         d="M 1.245326,-8.7172823 V 0 H 6.2515367 V -1.0834337 H 2.440839 v -7.6338486 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1013" />
+    </g>
+    <g
+       aria-label="A"
+       transform="rotate(-3.17,866.39919,-2046.0563)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(-3.17,866.39919,-2046.0563)">A</text>
-    <text
-       id="text1640"
+       id="text1638">
+      <path
+         d="m 7.7210215,0 h 1.295139 L 5.1556498,-8.7172823 H 3.9103238 L 0.03735978,0 H 1.2951391 l 0.909088,-2.1170543 H 6.7994802 Z M 2.677451,-3.2004879 4.495627,-7.4345965 6.3387096,-3.2004879 Z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1016" />
+    </g>
+    <g
+       transform="rotate(3.17,-740.20547,2292.3249)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(3.17,-740.20547,2292.3249)" />
-    <text
-       id="text1642"
+       id="text1640" />
+    <g
+       aria-label="V"
+       transform="matrix(0.99,0.17,-0.17,0.99,131.15,44.72)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(0.99,0.17,-0.17,0.99,131.15,44.72)">V</text>
-    <text
-       id="text1644"
+       id="text1642">
+      <path
+         d="M 0.0622663,-8.7172823 3.5740857,0 H 4.8194118 L 8.3561377,-8.7172823 H 7.0983584 L 4.2216553,-1.3324989 1.3449521,-8.7172823 Z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1020" />
+    </g>
+    <g
+       aria-label="I"
+       transform="rotate(15.97,-95.788301,528.45836)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(15.97,-95.788301,528.45836)">I</text>
-    <text
-       id="text1646"
+       id="text1644">
+      <path
+         d="M 1.245326,-8.7172823 V 0 h 1.195513 v -8.7172823 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1023" />
+    </g>
+    <g
+       aria-label="D"
+       transform="rotate(23.17,-44.139369,383.87635)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(23.17,-44.139369,383.87635)">D</text>
-    <text
-       id="text1648"
+       id="text1646">
+      <path
+         d="M 4.7945053,-8.7172823 H 1.245326 V 0 h 3.5118195 c 2.5902781,0 4.5329868,-1.8679891 4.5329868,-4.3586411 0,-2.5031054 -1.9302554,-4.3586412 -4.495627,-4.3586412 z m 0.024907,7.6338486 H 2.440839 v -6.5504149 h 2.3287597 c 1.8555358,0 3.3001141,1.3947651 3.3001141,3.2876607 0,1.8804423 -1.4196717,3.2627542 -3.250301,3.2627542 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1026" />
+    </g>
+    <g
+       aria-label="É"
+       transform="matrix(0.85,0.53,-0.53,0.85,158.82,53.45)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(0.85,0.53,-0.53,0.85,158.82,53.45)">É</text>
-    <text
-       id="text1650"
+       id="text1648">
+      <path
+         d="m 5.0560237,-11.232841 -1.3324988,1.618924 0.9838075,0.1245326 1.5442043,-1.2204196 z M 1.245326,-8.7172823 V 0 H 7.4470497 V -1.0834337 H 2.440839 v -2.777077 H 6.7870269 V -4.9439444 H 2.440839 v -2.6899042 h 4.8567716 v -1.0834337 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1029" />
+    </g>
+    <g
+       aria-label="O"
+       transform="matrix(0.76,0.66,-0.66,0.76,167.63,59.07)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(0.76,0.66,-0.66,0.76,167.63,59.07)">O</text>
-    <text
-       id="text1652"
+       id="text1650">
+      <path
+         d="m 5.0560237,-8.7920019 c -2.5653716,0 -4.5827998,1.9302554 -4.5827998,4.4209075 0,2.4906521 2.0174282,4.45826722 4.5827998,4.45826722 2.5653717,0 4.5827999,-1.96761512 4.5827999,-4.45826722 0,-2.4781988 -2.0174282,-4.4209075 -4.5827999,-4.4209075 z m 0.012453,1.0709804 c 1.8430825,0 3.349927,1.481938 3.349927,3.3499271 0,1.8679891 -1.5068445,3.37483357 -3.349927,3.37483357 -1.8430826,0 -3.3872868,-1.50684447 -3.3872868,-3.37483357 0,-1.8679891 1.531751,-3.3499271 3.3872868,-3.3499271 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1032" />
+    </g>
+    <g
+       transform="rotate(47.99,12.523658,232.58602)"
        style="font-weight:700;font-size:12.45326042px;font-family:Montserrat-Bold, Montserrat;fill:#ffffff"
-       transform="rotate(47.99,12.523658,232.58602)" />
-    <text
-       id="text1654"
+       id="text1652" />
+    <g
+       aria-label="I"
+       transform="matrix(0.61,0.8,-0.8,0.61,180.81,72.03)"
        style="font-weight:700;font-size:12.45326042px;font-family:Montserrat-Bold, Montserrat;fill:#ffffff"
-       transform="matrix(0.61,0.8,-0.8,0.61,180.81,72.03)">I</text>
-    <text
-       id="text1656"
+       id="text1654">
+      <path
+         d="M 0.84682171,-8.7297356 V 0 H 3.1257684 v -8.7297356 z"
+         style="font-weight:700;font-size:12.45326042px;font-family:Montserrat-Bold, Montserrat;fill:#ffffff"
+         id="path1036" />
+    </g>
+    <g
+       transform="rotate(57.36,21.759615,207.30506)"
        style="font-size:12.45326042px;font-family:Montserrat-Medium, Montserrat;fill:#ffffff"
-       transform="rotate(57.36,21.759615,207.30506)" />
-    <text
-       id="text1658"
+       id="text1656" />
+    <g
+       aria-label="V"
+       transform="rotate(63.77,28.000704,191.76113)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(63.77,28.000704,191.76113)">V</text>
-    <text
-       id="text1660"
+       id="text1658">
+      <path
+         d="M 0.0622663,-8.7172823 3.5740857,0 H 4.8194118 L 8.3561377,-8.7172823 H 7.0983584 L 4.2216553,-1.3324989 1.3449521,-8.7172823 Z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1040" />
+    </g>
+    <g
+       aria-label="O"
+       transform="rotate(72.68,33.996137,176.37204)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(72.68,33.996137,176.37204)">O</text>
-    <text
-       id="text1662"
+       id="text1660">
+      <path
+         d="m 5.0560237,-8.7920019 c -2.5653716,0 -4.5827998,1.9302554 -4.5827998,4.4209075 0,2.4906521 2.0174282,4.45826722 4.5827998,4.45826722 2.5653717,0 4.5827999,-1.96761512 4.5827999,-4.45826722 0,-2.4781988 -2.0174282,-4.4209075 -4.5827999,-4.4209075 z m 0.012453,1.0709804 c 1.8430825,0 3.349927,1.481938 3.349927,3.3499271 0,1.8679891 -1.5068445,3.37483357 -3.349927,3.37483357 -1.8430826,0 -3.3872868,-1.50684447 -3.3872868,-3.37483357 0,-1.8679891 1.531751,-3.3499271 3.3872868,-3.3499271 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1043" />
+    </g>
+    <g
+       aria-label="I"
+       transform="matrix(0.17,0.98,-0.98,0.17,195.68,103.6)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(0.17,0.98,-0.98,0.17,195.68,103.6)">I</text>
-    <text
-       id="text1664"
+       id="text1662">
+      <path
+         d="M 1.245326,-8.7172823 V 0 h 1.195513 v -8.7172823 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1046" />
+    </g>
+    <g
+       aria-label="R"
+       transform="matrix(0.06,1,-1,0.06,196.75,109.52)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(0.06,1,-1,0.06,196.75,109.52)">R</text>
-    <text
-       id="text1666"
+       id="text1664">
+      <path
+         d="M 8.2440584,0 6.214177,-2.9514227 c 1.2328727,-0.4234109 1.9053488,-1.4072184 1.9053488,-2.8268901 0,-1.8679891 -1.2577793,-2.9389695 -3.4620064,-2.9389695 H 1.245326 V 0 h 1.195513 v -2.7148108 h 2.2166804 c 0.1743456,0 0.336238,-0.012453 0.4856772,-0.024907 L 6.8741998,0 Z M 2.440839,-3.7982444 v -3.8356042 h 2.2166804 c 1.481938,0 2.3163064,0.6351162 2.3163064,1.8928955 0,1.2951391 -0.8343684,1.9427087 -2.3163064,1.9427087 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1049" />
+    </g>
+    <g
+       transform="matrix(-0.05,1,-1,-0.05,197.13,120.74)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(-0.05,1,-1,-0.05,197.13,120.74)" />
-    <text
-       id="text1668"
+       id="text1666" />
+    <g
+       aria-label="L"
+       transform="rotate(98.8,44.30676,147.49114)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(98.8,44.30676,147.49114)">L</text>
-    <text
-       id="text1670"
+       id="text1668">
+      <path
+         d="M 1.245326,-8.7172823 V 0 H 6.2515367 V -1.0834337 H 2.440839 v -7.6338486 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1053" />
+    </g>
+    <g
+       aria-label="A"
+       transform="matrix(-0.29,0.96,-0.96,-0.29,195.27,135.7)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(-0.29,0.96,-0.96,-0.29,195.27,135.7)">A</text>
-    <text
-       id="text1672"
+       id="text1670">
+      <path
+         d="m 7.7210215,0 h 1.295139 L 5.1556498,-8.7172823 H 3.9103238 L 0.03735978,0 H 1.2951391 l 0.909088,-2.1170543 H 6.7994802 Z M 2.677451,-3.2004879 4.495627,-7.4345965 6.3387096,-3.2004879 Z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1056" />
+    </g>
+    <g
+       transform="matrix(-0.4,0.92,-0.92,-0.4,191.77,146.29)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(-0.4,0.92,-0.92,-0.4,191.77,146.29)" />
-    <text
-       id="text1674"
+       id="text1672" />
+    <g
+       aria-label="V"
+       transform="rotate(119.73,50.870149,130.71894)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(119.73,50.870149,130.71894)">V</text>
-    <text
-       id="text1676"
+       id="text1674">
+      <path
+         d="M 0.0622663,-8.7172823 3.5740857,0 H 4.8194118 L 8.3561377,-8.7172823 H 7.0983584 L 4.2216553,-1.3324989 1.3449521,-8.7172823 Z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1060" />
+    </g>
+    <g
+       aria-label="I"
+       transform="matrix(-0.59,0.81,-0.81,-0.59,184.04,160.59)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(-0.59,0.81,-0.81,-0.59,184.04,160.59)">I</text>
-    <text
-       id="text1678"
+       id="text1676">
+      <path
+         d="M 1.245326,-8.7172823 V 0 h 1.195513 v -8.7172823 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1063" />
+    </g>
+    <g
+       aria-label="D"
+       transform="matrix(-0.69,0.73,-0.73,-0.69,180.57,165.46)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(-0.69,0.73,-0.73,-0.69,180.57,165.46)">D</text>
-    <text
-       id="text1680"
+       id="text1678">
+      <path
+         d="M 4.7945053,-8.7172823 H 1.245326 V 0 h 3.5118195 c 2.5902781,0 4.5329868,-1.8679891 4.5329868,-4.3586411 0,-2.5031054 -1.9302554,-4.3586412 -4.495627,-4.3586412 z m 0.024907,7.6338486 H 2.440839 v -6.5504149 h 2.3287597 c 1.8555358,0 3.3001141,1.3947651 3.3001141,3.2876607 0,1.8804423 -1.4196717,3.2627542 -3.250301,3.2627542 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1066" />
+    </g>
+    <g
+       aria-label="É"
+       transform="matrix(-0.79,0.61,-0.61,-0.79,171.86,174.36)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(-0.79,0.61,-0.61,-0.79,171.86,174.36)">É</text>
-    <text
-       id="text1682"
+       id="text1680">
+      <path
+         d="m 5.0560237,-11.232841 -1.3324988,1.618924 0.9838075,0.1245326 1.5442043,-1.2204196 z M 1.245326,-8.7172823 V 0 H 7.4470497 V -1.0834337 H 2.440839 v -2.777077 H 6.7870269 V -4.9439444 H 2.440839 v -2.6899042 h 4.8567716 v -1.0834337 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1069" />
+    </g>
+    <g
+       aria-label="O"
+       transform="rotate(150.95,58.374246,111.54912)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(150.95,58.374246,111.54912)">O</text>
-    <text
-       id="text1684"
+       id="text1682">
+      <path
+         d="m 5.0560237,-8.7920019 c -2.5653716,0 -4.5827998,1.9302554 -4.5827998,4.4209075 0,2.4906521 2.0174282,4.45826722 4.5827998,4.45826722 2.5653717,0 4.5827999,-1.96761512 4.5827999,-4.45826722 0,-2.4781988 -2.0174282,-4.4209075 -4.5827999,-4.4209075 z m 0.012453,1.0709804 c 1.8430825,0 3.349927,1.481938 3.349927,3.3499271 0,1.8679891 -1.5068445,3.37483357 -3.349927,3.37483357 -1.8430826,0 -3.3872868,-1.50684447 -3.3872868,-3.37483357 0,-1.8679891 1.531751,-3.3499271 3.3872868,-3.3499271 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1072" />
+    </g>
+    <g
+       transform="rotate(158.04,58.066994,108.05739)"
        style="font-size:12.45326042px;font-family:Montserrat-Medium, Montserrat;fill:#ffffff"
-       transform="rotate(158.04,58.066994,108.05739)" />
-    <text
-       id="text1686"
+       id="text1684" />
+    <g
+       transform="matrix(-0.95,0.3,-0.3,-0.95,147.04,188.59)"
        style="font-weight:700;font-size:12.45326042px;font-family:Montserrat-Bold, Montserrat;fill:#ffffff"
-       transform="matrix(-0.95,0.3,-0.3,-0.95,147.04,188.59)" />
-    <text
-       id="text1688"
+       id="text1686" />
+    <g
+       aria-label="I"
+       transform="matrix(-0.98,0.22,-0.22,-0.98,141.47,190.26)"
        style="font-weight:700;font-size:12.45326042px;font-family:Montserrat-Bold, Montserrat;fill:#ffffff"
-       transform="matrix(-0.98,0.22,-0.22,-0.98,141.47,190.26)">I</text>
-    <text
-       id="text1690"
+       id="text1688">
+      <path
+         d="M 0.84682171,-8.7297356 V 0 H 3.1257684 v -8.7297356 z"
+         style="font-weight:700;font-size:12.45326042px;font-family:Montserrat-Bold, Montserrat;fill:#ffffff"
+         id="path1077" />
+    </g>
+    <g
+       transform="rotate(171.97,60.877212,100.52484)"
        style="font-size:12.45326042px;font-family:Montserrat-Medium, Montserrat;fill:#ffffff"
-       transform="rotate(171.97,60.877212,100.52484)" />
-    <text
-       id="text1692"
+       id="text1690" />
+    <g
+       transform="rotate(176.31,61.688255,98.221884)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(176.31,61.688255,98.221884)" />
-    <text
-       id="text1694"
+       id="text1692" />
+    <g
+       aria-label="V"
+       transform="matrix(-1,-0.04,0.04,-1,124.07,192.65)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(-1,-0.04,0.04,-1,124.07,192.65)">V</text>
-    <text
-       id="text1696"
+       id="text1694">
+      <path
+         d="M 0.0622663,-8.7172823 3.5740857,0 H 4.8194118 L 8.3561377,-8.7172823 H 7.0983584 L 4.2216553,-1.3324989 1.3449521,-8.7172823 Z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1082" />
+    </g>
+    <g
+       aria-label="O"
+       transform="matrix(-0.98,-0.2,0.2,-0.98,113.46,192.09)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(-0.98,-0.2,0.2,-0.98,113.46,192.09)">O</text>
-    <text
-       id="text1698"
+       id="text1696">
+      <path
+         d="m 5.0560237,-8.7920019 c -2.5653716,0 -4.5827998,1.9302554 -4.5827998,4.4209075 0,2.4906521 2.0174282,4.45826722 4.5827998,4.45826722 2.5653717,0 4.5827999,-1.96761512 4.5827999,-4.45826722 0,-2.4781988 -2.0174282,-4.4209075 -4.5827999,-4.4209075 z m 0.012453,1.0709804 c 1.8430825,0 3.349927,1.481938 3.349927,3.3499271 0,1.8679891 -1.5068445,3.37483357 -3.349927,3.37483357 -1.8430826,0 -3.3872868,-1.50684447 -3.3872868,-3.37483357 0,-1.8679891 1.531751,-3.3499271 3.3872868,-3.3499271 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1085" />
+    </g>
+    <g
+       aria-label="I"
+       transform="rotate(-161.33,66.129797,86.3113)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(-161.33,66.129797,86.3113)">I</text>
-    <text
-       id="text1700"
+       id="text1698">
+      <path
+         d="M 1.245326,-8.7172823 V 0 h 1.195513 v -8.7172823 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1088" />
+    </g>
+    <g
+       aria-label="R"
+       transform="rotate(-154.62,68.823394,82.927333)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(-154.62,68.823394,82.927333)">R</text>
-    <text
-       id="text1702"
+       id="text1700">
+      <path
+         d="M 8.2440584,0 6.214177,-2.9514227 c 1.2328727,-0.4234109 1.9053488,-1.4072184 1.9053488,-2.8268901 0,-1.8679891 -1.2577793,-2.9389695 -3.4620064,-2.9389695 H 1.245326 V 0 h 1.195513 v -2.7148108 h 2.2166804 c 0.1743456,0 0.336238,-0.012453 0.4856772,-0.024907 L 6.8741998,0 Z M 2.440839,-3.7982444 v -3.8356042 h 2.2166804 c 1.481938,0 2.3163064,0.6351162 2.3163064,1.8928955 0,1.2951391 -0.8343684,1.9427087 -2.3163064,1.9427087 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1091" />
+    </g>
+    <g
+       transform="rotate(-148.11,68.741462,78.928891)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(-148.11,68.741462,78.928891)" />
-    <text
-       id="text1704"
+       id="text1702" />
+    <g
+       aria-label="L"
+       transform="rotate(-142.29,70.985535,75.880381)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(-142.29,70.985535,75.880381)">L</text>
-    <text
-       id="text1706"
+       id="text1704">
+      <path
+         d="M 1.245326,-8.7172823 V 0 H 6.2515367 V -1.0834337 H 2.440839 v -7.6338486 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1095" />
+    </g>
+    <g
+       aria-label="A"
+       transform="matrix(-0.7,-0.72,0.72,-0.7,73.22,173.4)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(-0.7,-0.72,0.72,-0.7,73.22,173.4)">A</text>
-    <text
-       id="text1708"
+       id="text1706">
+      <path
+         d="m 7.7210215,0 h 1.295139 L 5.1556498,-8.7172823 H 3.9103238 L 0.03735978,0 H 1.2951391 l 0.909088,-2.1170543 H 6.7994802 Z M 2.677451,-3.2004879 4.495627,-7.4345965 6.3387096,-3.2004879 Z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1098" />
+    </g>
+    <g
+       transform="matrix(-0.61,-0.79,0.79,-0.61,65.63,165.22)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(-0.61,-0.79,0.79,-0.61,65.63,165.22)" />
-    <text
-       id="text1710"
+       id="text1708" />
+    <g
+       aria-label="V"
+       transform="matrix(-0.52,-0.85,0.85,-0.52,62.22,160.89)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(-0.52,-0.85,0.85,-0.52,62.22,160.89)">V</text>
-    <text
-       id="text1712"
+       id="text1710">
+      <path
+         d="M 0.0622663,-8.7172823 3.5740857,0 H 4.8194118 L 8.3561377,-8.7172823 H 7.0983584 L 4.2216553,-1.3324989 1.3449521,-8.7172823 Z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1102" />
+    </g>
+    <g
+       aria-label="I"
+       transform="rotate(-115.14,76.564834,57.752769)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(-115.14,76.564834,57.752769)">I</text>
-    <text
-       id="text1714"
+       id="text1712">
+      <path
+         d="M 1.245326,-8.7172823 V 0 h 1.195513 v -8.7172823 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1105" />
+    </g>
+    <g
+       aria-label="D"
+       transform="rotate(-107.94,80.27376,53.385373)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(-107.94,80.27376,53.385373)">D</text>
-    <text
-       id="text1716"
+       id="text1714">
+      <path
+         d="M 4.7945053,-8.7172823 H 1.245326 V 0 h 3.5118195 c 2.5902781,0 4.5329868,-1.8679891 4.5329868,-4.3586411 0,-2.5031054 -1.9302554,-4.3586412 -4.495627,-4.3586412 z m 0.024907,7.6338486 H 2.440839 v -6.5504149 h 2.3287597 c 1.8555358,0 3.3001141,1.3947651 3.3001141,3.2876607 0,1.8804423 -1.4196717,3.2627542 -3.250301,3.2627542 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1108" />
+    </g>
+    <g
+       aria-label="É"
+       transform="matrix(-0.16,-0.99,0.99,-0.16,50.61,134.29)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="matrix(-0.16,-0.99,0.99,-0.16,50.61,134.29)">É</text>
-    <text
-       id="text1718"
+       id="text1716">
+      <path
+         d="m 5.0560237,-11.232841 -1.3324988,1.618924 0.9838075,0.1245326 1.5442043,-1.2204196 z M 1.245326,-8.7172823 V 0 H 7.4470497 V -1.0834337 H 2.440839 v -2.777077 H 6.7870269 V -4.9439444 H 2.440839 v -2.6899042 h 4.8567716 v -1.0834337 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1111" />
+    </g>
+    <g
+       aria-label="O"
+       transform="rotate(-90.93,85.532206,37.805446)"
        style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
-       transform="rotate(-90.93,85.532206,37.805446)">O</text>
-    <text
-       id="text1720"
+       id="text1718">
+      <path
+         d="m 5.0560237,-8.7920019 c -2.5653716,0 -4.5827998,1.9302554 -4.5827998,4.4209075 0,2.4906521 2.0174282,4.45826722 4.5827998,4.45826722 2.5653717,0 4.5827999,-1.96761512 4.5827999,-4.45826722 0,-2.4781988 -2.0174282,-4.4209075 -4.5827999,-4.4209075 z m 0.012453,1.0709804 c 1.8430825,0 3.349927,1.481938 3.349927,3.3499271 0,1.8679891 -1.5068445,3.37483357 -3.349927,3.37483357 -1.8430826,0 -3.3872868,-1.50684447 -3.3872868,-3.37483357 0,-1.8679891 1.531751,-3.3499271 3.3872868,-3.3499271 z"
+         style="font-size:12.45326042px;font-family:Montserrat-Regular, Montserrat;fill:#ffffff"
+         id="path1114" />
+    </g>
+    <g
+       transform="matrix(0.12,-0.99,0.99,0.12,49.36,111.28)"
        style="font-size:12.45326042px;font-family:Montserrat-Medium, Montserrat;fill:#ffffff"
-       transform="matrix(0.12,-0.99,0.99,0.12,49.36,111.28)" />
-    <text
-       id="text1722"
+       id="text1720" />
+    <g
+       transform="rotate(-78.82,89.359498,22.337311)"
        style="font-size:12.45326042px;font-family:Montserrat-Medium, Montserrat;fill:#ffffff"
-       transform="rotate(-78.82,89.359498,22.337311)" />
-    <text
-       id="text1724"
+       id="text1722" />
+    <g
+       aria-label="I"
+       transform="rotate(-74.12,91.950565,16.105361)"
        style="font-weight:700;font-size:12.45326042px;font-family:Montserrat-Bold, Montserrat;fill:#ffffff"
-       transform="rotate(-74.12,91.950565,16.105361)">I</text>
-    <text
-       id="text1726"
+       id="text1724">
+      <path
+         d="M 0.84682171,-8.7297356 V 0 H 3.1257684 v -8.7297356 z"
+         style="font-weight:700;font-size:12.45326042px;font-family:Montserrat-Bold, Montserrat;fill:#ffffff"
+         id="path1119" />
+    </g>
+    <g
+       transform="rotate(-69.43,94.4281,8.6522858)"
        style="font-size:12.45326042px;font-family:Montserrat-Medium, Montserrat;fill:#ffffff"
-       transform="rotate(-69.43,94.4281,8.6522858)" />
-    <text
-       id="text1728"
+       id="text1726" />
+    <g
+       transform="rotate(-65.02,97.237977,1.0526687)"
        style="font-size:12.45326042px;font-family:Montserrat-Medium, Montserrat;fill:#ffffff"
-       transform="rotate(-65.02,97.237977,1.0526687)" />
-    <polygon
-       id="polygon1730"
+       id="text1728" />
+    <path
        style="fill:#ffffff"
-       points="171.31,122.01 99.42,80.5 99.42,163.51 " />
+       d="M 171.31,122.01 99.42,80.5 v 83.01 z"
+       id="polygon1730" />
   </g>
 </svg>
