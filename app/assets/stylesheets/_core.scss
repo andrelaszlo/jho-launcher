@@ -443,23 +443,24 @@ html.home{
     @media (max-width: 991px) {
       .play-col {
         text-align: center;
+        min-height: 600px;
       }
       .play-button {
-        margin: auto;
         position: relative;
-        left: 150px;
+        left: 0px;
+        top: 60px;
       }
     }
 
     @media (max-width: 600px) {
       .play-col {
-        min-height: 300px !important;
-        text-align: right;
-        padding-right: 40px;
+        min-height: 500px;
       }
-      .play-button {
-        left: auto;
-        top: 75px;
+    }
+
+    @media (max-width: 500px) {
+      .play-col {
+        min-height: 400px;
       }
     }
 
