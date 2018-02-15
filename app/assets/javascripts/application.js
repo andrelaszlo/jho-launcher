@@ -28,7 +28,7 @@ $(function() {
     iframe: true,
     iframeHeight: 338,
     openFullscreen: true,
-    transitionIn: 'fadeInDown',
+    transitionIn: 'flipInX',
     iframeURL: "https://player.vimeo.com/video/245712135?title=0&byline=0&portrait=0&autoplay=1",
     background: 'black',
     headerColor: 'black',
