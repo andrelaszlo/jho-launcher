@@ -7,6 +7,7 @@ $foreground-light: rgba($foreground, 0.5);
 $medium-gray: #E1E9ED;
 $light-gray: #eef3f6;
 $light-blue: #e3edf1;
+$top-gray: #f6f8fb;
 $green: #60BD7A;
 $montserrat-font: Montserrat, sans-serif;
 $cardo-font: Cardo, 'Times New Roman', serif;
@@ -50,6 +51,7 @@ $animation-time: 1.2s;
   text-align: center;
 
   #logo {
+    z-index: 10;
     display: inline-block;
     margin-bottom: -63px;
   }
@@ -382,6 +384,18 @@ html.home{
     }
   }
 
+  
+  .right {
+    background-image: image-url('home/dots.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+  }
+
+  .hero-full {
+    background-color: $top-gray;
+  }
+
   @media (max-width: 991px) {
     .hero-full {
       background-image: image-url('home/hero_left.jpg');
@@ -389,10 +403,14 @@ html.home{
       background-size: contain;
       background-repeat: no-repeat;
     }
+
+    .play-col {
+      min-height: 324px !important;
+    }
   }
 
-  @media (min-width: 991px) {
-    .hero {
+  @media (min-width: 1200px) and (min-width: 991px){
+    .hero-full {
       background-image: image-url('home/hero_top.jpg');
       background-position: center top;
       background-size: contain;
@@ -400,15 +418,27 @@ html.home{
     }
   }
 
+  @media (min-width: 991px) and (max-width: 1199px) {
+    .hero-full {
+      background-image: image-url('home/hero_top.jpg');
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+
   .hero {
 
     .play-col {
       min-height: 250px;
+      text-align: right;
     }
 
     .play-button {
+      display: inline-block;
       cursor: pointer;
-      margin: 7% auto 0 255px;
+      margin: 10% 0px auto auto !important;
       padding-top: 44px;
     }
 
