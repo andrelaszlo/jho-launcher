@@ -1,0 +1,29 @@
+<svg id="ronds" xmlns="http://www.w3.org/2000/svg" width="585" height="265" viewBox="0 0 585 265">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e27170;
+      }
+
+      .cls-2 {
+        fill: #333e49;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="135" cy="39" r="4"/>
+  <circle id="Ellipse_3_copie_4" data-name="Ellipse 3 copie 4" class="cls-1" cx="43" cy="196" r="4"/>
+  <circle id="Ellipse_3_copie_5" data-name="Ellipse 3 copie 5" class="cls-2" cx="29" cy="89" r="4"/>
+  <circle id="Ellipse_3_copie_6" data-name="Ellipse 3 copie 6" class="cls-2" cx="82" cy="93" r="4"/>
+  <circle id="Ellipse_3_copie_8" data-name="Ellipse 3 copie 8" class="cls-2" cx="111" cy="123" r="4"/>
+  <circle id="Ellipse_3_copie_9" data-name="Ellipse 3 copie 9" class="cls-2" cx="175" cy="85" r="4"/>
+  <circle id="Ellipse_3_copie_10" data-name="Ellipse 3 copie 10" class="cls-2" cx="261" cy="64" r="4"/>
+  <circle id="Ellipse_3_copie_16" data-name="Ellipse 3 copie 16" class="cls-2" cx="313" cy="77" r="4"/>
+  <circle id="Ellipse_3_copie_11" data-name="Ellipse 3 copie 11" class="cls-2" cx="437" cy="119" r="4"/>
+  <circle id="Ellipse_3_copie_12" data-name="Ellipse 3 copie 12" class="cls-2" cx="391" cy="58" r="4"/>
+  <circle id="Ellipse_3_copie_17" data-name="Ellipse 3 copie 17" class="cls-2" cx="367" cy="131" r="4"/>
+  <circle id="Ellipse_3_copie_14" data-name="Ellipse 3 copie 14" class="cls-2" cx="570" cy="165" r="4"/>
+  <circle id="Ellipse_3_copie_15" data-name="Ellipse 3 copie 15" class="cls-2" cx="520" cy="226" r="4"/>
+  <circle id="Ellipse_3_copie" data-name="Ellipse 3 copie" class="cls-1" cx="279" cy="82" r="4"/>
+  <circle id="Ellipse_3_copie_7" data-name="Ellipse 3 copie 7" class="cls-1" cx="498" cy="97" r="4"/>
+  <circle id="Ellipse_3_copie_2" data-name="Ellipse 3 copie 2" class="cls-1" cx="454" cy="135" r="4"/>
+</svg>

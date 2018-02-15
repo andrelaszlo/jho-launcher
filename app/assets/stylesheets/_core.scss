@@ -386,7 +386,7 @@ html.home{
 
   
   .right {
-    background-image: image-url('home/dots.png');
+    background-image: image-url('home/dots.svg');
     background-position: center top;
     background-repeat: no-repeat;
     padding-top: 100px;
@@ -402,10 +402,6 @@ html.home{
       background-position: center bottom;
       background-size: contain;
       background-repeat: no-repeat;
-    }
-
-    .play-col {
-      min-height: 324px !important;
     }
   }
 
@@ -431,28 +427,42 @@ html.home{
   .hero {
 
     .play-col {
-      min-height: 250px;
+      min-height: 450px;
       text-align: right;
     }
 
     .play-button {
+      width: 125px;
+      height: 125px;
       display: inline-block;
       cursor: pointer;
-      margin: 10% 0px auto auto !important;
-      padding-top: 44px;
+      position: relative;
+      top: 170px;
     }
 
     @media (max-width: 991px) {
+      .play-col {
+        text-align: center;
+      }
       .play-button {
-        margin: 0 auto auto 10% !important;
+        margin: auto;
+        position: relative;
+        left: 150px;
       }
     }
 
-    @media (max-width: 1199px) {
+    @media (max-width: 600px) {
+      .play-col {
+        min-height: 300px !important;
+        text-align: right;
+        padding-right: 40px;
+      }
       .play-button {
-        margin: 28% auto 0px 316px;
+        left: auto;
+        top: 75px;
       }
     }
+
   }
 
   #value {
