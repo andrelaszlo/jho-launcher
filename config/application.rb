@@ -51,6 +51,9 @@ module Prelaunchr
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    # Try preventing the 100% cpu issue
+    config.cache_classes = true
+
     # decides whether the prelaunch campaign has ended or not
     config.ended = ENV['CAMPAIGN_ENDED'].to_s == 'true'
 
