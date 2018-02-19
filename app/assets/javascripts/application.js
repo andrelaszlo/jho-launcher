@@ -12,6 +12,18 @@
 //
 //= require_tree .
 
+function registerPlay(event) {
+  if (typeof(ga) == "undefined") {
+    return true;
+  }
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Videos',
+    eventAction: 'play',
+    eventLabel: 'Prelaunch video'
+  });
+}
+
 $(function() {
   var msgs = ["Oui, je m’inscris", "Mais grave !", "Oh oui !", "Carrément !"];
   var btn = document.querySelector("input[type='submit']");
@@ -35,7 +47,7 @@ $(function() {
     title: 'jho.fr',
     closeOnEscape: true,
     closeButton: true,
-    
+    onOpened: registerPlay
   });
 
   $(document).on('click', '.trigger', function (event) {
