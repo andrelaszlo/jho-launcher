@@ -13,6 +13,23 @@ class User < ActiveRecord::Base
   before_create :create_referral_code
   after_create :send_welcome_email
 
+  def referral_count
+    self.referrals.count
+  end
+
+  def active_at
+    self.referrals.map{ |x| x.created_at }.max or self.created_at
+  end
+
+  def total_referrals
+    total = self.referrals.count
+    self.referrals.each do |ref|
+      puts ref.id
+      total += ref.total_referrals
+    end
+    total
+  end
+
   private
 
   def create_referral_code
