@@ -12,14 +12,15 @@ namespace :export do
         filename = "#{Rails.root}/lib/assets/email_output.csv"
         zipfilename = "#{Rails.root}/lib/assets/email_output.zip"
 
-        headers = ['email', 'direct referrals', 'total referrals', 'registered', 'active', 'referred emails']
+        headers = ['email', 'direct referrals', 'total referrals', 'registered', 'active', 'referrer', 'referred emails']
 
         CSV.open(filename, "wb", {headers: headers, write_headers: true}) do |csv|
           User.all.each { |user|
             created = user.created_at.in_time_zone('CET').strftime("%Y-%m-%d %H:%M:%S")
             active = user.active_at.in_time_zone('CET').strftime("%Y-%m-%d %H:%M:%S")
             referred_emails = user.referrals.map { |ref| ref.email }.join ","
-            csv << [user.email, user.referral_count, user.total_referrals, created, active, referred_emails]
+            referrer_email = user.referrer ? user.referrer.email : nil
+            csv << [user.email, user.referral_count, user.total_referrals, created, active, referrer_email, referred_emails]
           }
         end
 
