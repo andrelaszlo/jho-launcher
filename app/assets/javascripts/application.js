@@ -13,14 +13,11 @@
 //= require_tree .
 
 function registerPlay(event) {
-  if (typeof(ga) == "undefined") {
+  if (typeof(gtag) == "undefined") {
     return true;
   }
-  ga('send', {
-    hitType: 'event',
-    eventCategory: 'Videos',
-    eventAction: 'play',
-    eventLabel: 'Prelaunch video'
+  gtag('event', 'view_promotion', {
+    'event_label': 'Prelaunch video',
   });
 }
 
