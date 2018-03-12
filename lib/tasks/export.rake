@@ -21,6 +21,7 @@ namespace :export do
             referred_emails = user.referrals.map { |ref| ref.email }.join ","
             referrer_email = user.referrer ? user.referrer.email : nil
             csv << [user.email, user.referral_count, user.total_referrals, created, active, referrer_email, referred_emails]
+            sleep 0.1 # XXX: The above is apparently a bit heavy, relax a little
           }
         end
 
