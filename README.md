@@ -1,32 +1,12 @@
-This is jho's modified version of the Prelaunchr project.
+This is jho's modified version of the [Prelaunchr][prelaunchr] project.
 
-Prelaunchr
-==========
+[prelaunchr]: https://github.com/harrystech/prelaunchr
+[jho]: https://jho.fr
 
-[![Build Status](https://travis-ci.org/harrystech/prelaunchr.svg?branch=master)](https://travis-ci.org/harrystech/prelaunchr)
+Jho Launcher
+============
 
-Originally open sourced over on our [engineering blog](http://engineering.harrys.com/2014/07/21/dont-launch-crickets.html),
-and discussed in great detail over at [Tim Ferriss' Blog](http://fourhourworkweek.com/2014/07/21/harrys-prelaunchr-email),
-Prelaunchr is a skeleton Rails application for quickly starting a viral
-prelaunch campaign for new companies or products. The campaign is conducive to
-social sharing and has prize levels based on the number of people each person
-refers. By default, we've included our original HTML/CSS for both the site and
-email to give you a better idea of how this looked when actually running.
-
-## Mechanics
-
-Prelaunchr has a main mechanic from which everything else is derived: Every
-`User` is given a unique `referral_code` which is how the application knows who
-referred a signing up user. Based on the amount of referrals a `User` has
-brought to the site, they are put into a different "prize group". The groups,
-amounts, and prizes are completely up to you to set.
-
-## IP Blocking
-
-By default, we block more than 2 sign-ups from the same IP address. This was
-simplistic, but was good enough for us during our campaign. If you want
-something more substantial take a look at [Rack::Attack](https://github.com/kickstarter/rack-attack)
-
+The prelaunch site of [Jho][jho].
 
 ## Developer Setup
 
@@ -82,7 +62,8 @@ for security reasons. Password confirmation should match password.
 
 You can run this locally in a Rails console for development testing.
 
-If you are deployed to Heroku, you would run it there.
+The project is built to run on [Clevercloud][clevercloud]. Just add a
+database and the correct environment variables.
 
 ## Teardown
 
@@ -95,17 +76,36 @@ CSV's in `/lib/assets` corresponding to each prize group.
 
 ## Configuration
 
-* Set the different prize levels on the `User::REFERRAL_STEPS` constant inside
-`/app/models/user.rb`
-* The `config.ended` setting in `/config/application.rb` decides whether the
-prelaunch campaign has ended or not (e.g. Active/Inactive). We've included this
-option so you can quickly close the application and direct users to your newly
-launched site.
+Most important settings can be set using the following environment variables:
+
+### Clever Cloud config
+
+* `CACHE_DEPENDENCIES` [`true`|`false`] Re-use dependencies between deploys
+* `CC_RACKUP_SERVER` eg `puma`
+* `CC_WORKER_COMMAND` set to `bundle exec rake jobs:work`
+* `ENABLE_METRICS` [`true`|`false`] The app logs some metrics to statsd. When `true`, this will make Clever Cloud collect these metrics, and others (beta).
+* `PORT` HTTP port to use (eg 8080)
+* `STATIC_FILES_PATH` Path for static files, eg `/public`
+* `STATIC_URL_PREFIX` URL prefix for static files, eg `/public`
+
+### General config
+* `CAMPAIGN_ENDED`  [`true`|`false`] Hide the campaign (not fully implemented)
+* `CAMPAIGN_STARTED`  [`true`|`false`] Show placeholder page when `false`
+* `CANONICAL_HOST` eg `staging.jho.fr`
+* `DEFAULT_HOST` eg `https://staging.jho.fr`
+* `DEFAULT_MAILER_HOST` eg `https://staging.jho.fr` (used in emails)
+* `IP_LIMIT` How many signups to allow per IP
+* `SECRET_KEY_BASE` Rails secret key
+* `SMTP_HOST` SMTP server for outgoing emails, eg `smtp.mailgun.org`
+* `SMTP_PASSWORD` SMTP password
+* `SMTP_PORT` SMTP port
+* `SMTP_USER_NAME` SMTP username
+* `USERDATA_EMAIL` Email address(es) where daily report (CSV) is sent, eg `me@example,com,you@example.com`
 
 ## License
 
 The code, documentation, non-branded copy and configuration are released under
 the MIT license. Any branded assets are included only to illustrate and inspire.
 
-Please change the artwork to use your own brand! Harry's does not give
-you permission to use our brand or trademarks in your own marketing.
+Please change the artwork to use your own brand! Jho does not give you
+permission to use our brand or trademarks in your own marketing.
