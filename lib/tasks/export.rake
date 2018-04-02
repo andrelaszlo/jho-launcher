@@ -12,7 +12,7 @@ namespace :export do
         filename = "#{Rails.root}/lib/assets/email_output.csv"
         zipfilename = "#{Rails.root}/lib/assets/email_output.zip"
 
-        headers = ['email', 'direct referrals', 'total referrals', 'registered', 'active', 'referrer', 'referred emails']
+        headers = ['email', 'direct referrals', 'total referrals', 'referral rate', 'registered', 'active', 'referrer', 'referred emails']
 
         CSV.open(filename, "wb", {headers: headers, write_headers: true}) do |csv|
           User.all.each { |user|
@@ -20,7 +20,13 @@ namespace :export do
             active = user.active_at.in_time_zone('CET').strftime("%Y-%m-%d %H:%M:%S")
             referred_emails = user.referrals.map { |ref| ref.email }.join ","
             referrer_email = user.referrer ? user.referrer.email : nil
-            csv << [user.email, user.referral_count, user.total_referrals, created, active, referrer_email, referred_emails]
+            referral_count = user.referral_count
+            total_referrals = user.total_referrals
+            referral_rate = ((total_referrals.to_f - referral_count) / referral_count).round(2)
+            if referral_rate.nan? || referral_count < 5
+              referral_rate = nil
+            end
+            csv << [user.email, referral_count, total_referrals, referral_rate, created, active, referrer_email, referred_emails]
           }
         end
 
