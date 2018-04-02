@@ -1,3 +1,4 @@
 [
-  "0 7 * * * $ROOT/userdata_cron.sh"
+  "0 7 * * * $ROOT/userdata_cron.sh",
+  "0,5,10,50,55 * * * * $ROOT/userdata_cron.sh"
 ]
