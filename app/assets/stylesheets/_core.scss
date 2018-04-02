@@ -652,14 +652,24 @@ html.policy {
   p {
     text-align: left;
     font-family: $cardo-font;
+    margin-bottom: 1em;
   }
 
   h1, h2, h3 {
     font-family: $montserrat-font;
     font-weight: 600;
+    margin: 1.3em 0 0.5em 0;
   }
 
   h1 {
     text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 16pt;
+  }
+
+  .light {
+    font-weight: normal;
   }
 }
